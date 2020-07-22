@@ -1,0 +1,101 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Suvash Kumar"
+theme = "soho"
+
+enableInlineShortcodes = true
+
+summarylength = 10
+enableEmoji = true
+
+[params]
+author = "Author Name"
+description = "Personal Blog"
+
+## Set one of:
+# gravatar = "soho@example.com"
+profilePicture = "images/suvash.png"
+
+copyright = "Suvash Kumar"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+## Set custom theme color.
+# themeColor = "#fc2803"
+
+## Set custom CSS and/or JS to override site defaults.
+customCss = ["css/blog.css"]
+customJs = ["js/blog.js"]
+
+  ## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-facebook"
+  title = "Facebook"
+  url = "https://facebook.com/suvashkumar.sumon"
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+
+ [[menu.main]]
+  name = "Categories"
+  identifier = "categories"
+  weight = 300
+  url = "/categories/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 300
+  url = "/about/"
+
+  [[menu.main]]
+  name = "tags"
+  identifier = "tags"
+  weight = 300
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "Contact Me"
+  identifier = "contact"
+  weight = 300
+  url = "/contact-me/"
+
+
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true # if false, you need to provide you own custom CSS
+  style = "monokai"
+  tabWidth = 4
