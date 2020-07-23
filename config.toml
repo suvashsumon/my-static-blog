@@ -17,11 +17,11 @@ description = "Personal Blog"
 profilePicture = "images/suvash.png"
 
 copyright = "Suvash Kumar"
-license = "CC BY-SA 4.0"
-licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+# license = "CC BY-SA 4.0"
+# licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
 ## Set custom theme color.
-# themeColor = "#fc2803"
+themeColor = "#e67e22"
 
 ## Set custom CSS and/or JS to override site defaults.
 customCss = ["css/blog.css"]
@@ -31,7 +31,7 @@ customJs = ["js/blog.js"]
   [[params.socialIcons]]
   icon = "fa-linkedin"
   title = "Linkedin"
-  url = "#"
+  url = "https://www.linkedin.com/in/suvash-kumar-544b5917b"
 
   [[params.socialIcons]]
   icon = "fa-github"
@@ -68,10 +68,10 @@ customJs = ["js/blog.js"]
   url = "/categories/"
 
   [[menu.main]]
-  name = "About"
+  name = "About Me"
   identifier = "about"
   weight = 300
-  url = "/about/"
+  url = "/about-me/"
 
 
 
