@@ -5,5 +5,5 @@ draft: false
 ---
 
 ### July, 2020
-* [hello]()
-* [পাইথন দিয়ে CSV হ্যান্ডেলিং](../post/csv-handelling-using-python/)
+* [Cmder : একটি অসাধারণ টার্মিনাল ইমুলেটর](/post/cmder-the-best-terminal-ever/)
+* [পাইথন দিয়ে CSV হ্যান্ডেলিং](/post/csv-handelling-using-python/)
