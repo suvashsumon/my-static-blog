@@ -1,7 +1,7 @@
 ---
 title: "JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব"
 date: 2020-07-23T20:39:31+06:00
-draft: true
+draft: false
 categories: ["JAR ফাইলকে EXE তে রুপান্তর"]
 ---
 
