@@ -5,5 +5,7 @@ draft: false
 ---
 
 ### July, 2020
+* [JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব](/post/jar-to-exe-2/)
+* [JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব](/post/jar-to-exe-1/)
 * [Cmder : একটি অসাধারণ টার্মিনাল ইমুলেটর](/post/cmder-the-best-terminal-ever/)
 * [পাইথন দিয়ে CSV হ্যান্ডেলিং](/post/csv-handelling-using-python/)
