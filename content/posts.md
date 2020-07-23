@@ -1,7 +1,7 @@
 ---
 title: "Posts"
 date: 2020-07-23T11:13:11+06:00
-draft: true
+draft: false
 ---
 
 ### July, 2020

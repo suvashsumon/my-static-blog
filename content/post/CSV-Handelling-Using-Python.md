@@ -1,7 +1,7 @@
 ---
 title: "পাইথন দিয়ে CSV হ্যান্ডেলিং"
 date: 2020-07-23T10:54:55+06:00
-draft: true
+draft: false
 categories: ["Python Database Handelling"]
 ---
 
