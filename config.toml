@@ -36,12 +36,12 @@ customJs = ["js/blog.js"]
   [[params.socialIcons]]
   icon = "fa-github"
   title = "GitHub"
-  url = "#"
+  url = "https://github.com/suvashsumon"
 
   [[params.socialIcons]]
   icon = "fa-twitter"
   title = "Twitter"
-  url = "#"
+  url = "https://twitter.com/SuvashK13937007"
 
   [[params.socialIcons]]
   icon = "fa-facebook"
@@ -49,7 +49,7 @@ customJs = ["js/blog.js"]
   url = "https://facebook.com/suvashkumar.sumon"
 
   [[params.socialIcons]]
-  icon = "fa-mail"
+  icon = "fa fa-envelope"
   title = "Email"
   url = "mailto:suvashkumar.naogaon@gmail.com"
 
@@ -73,11 +73,6 @@ customJs = ["js/blog.js"]
   weight = 300
   url = "/about/"
 
-  [[menu.main]]
-  name = "Contact Me"
-  identifier = "contact"
-  weight = 300
-  url = "/contact-me/"
 
 
 
