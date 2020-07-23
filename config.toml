@@ -9,7 +9,7 @@ summarylength = 10
 enableEmoji = true
 
 [params]
-author = "Author Name"
+author = "Suvash Kumar"
 description = "Personal Blog"
 
 ## Set one of:
@@ -48,6 +48,11 @@ customJs = ["js/blog.js"]
   title = "Facebook"
   url = "https://facebook.com/suvashkumar.sumon"
 
+  [[params.socialIcons]]
+  icon = "fa-mail"
+  title = "Email"
+  url = "mailto:suvashkumar.naogaon@gmail.com"
+
 [menu]
 
   [[menu.main]]
@@ -67,12 +72,6 @@ customJs = ["js/blog.js"]
   identifier = "about"
   weight = 300
   url = "/about/"
-
-  [[menu.main]]
-  name = "tags"
-  identifier = "tags"
-  weight = 300
-  url = "/tags/"
 
   [[menu.main]]
   name = "Contact Me"
