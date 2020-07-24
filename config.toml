@@ -10,7 +10,7 @@ enableEmoji = true
 
 [params]
 author = "Suvash Kumar"
-description = "Personal Blog"
+description = "Developer & Blogger"
 
 ## Set one of:
 # gravatar = "soho@example.com"
@@ -64,7 +64,7 @@ customJs = ["js/blog.js"]
  [[menu.main]]
   name = "Categories"
   identifier = "categories"
-  weight = 300
+  weight = 200
   url = "/categories/"
 
   [[menu.main]]
@@ -76,7 +76,7 @@ customJs = ["js/blog.js"]
   [[menu.main]]
   name = "Terms & Conditions"
   identifier = "terms-and-conditions"
-  weight = 300
+  weight = 400
   url = "/terms-and-conditions/"
 
 

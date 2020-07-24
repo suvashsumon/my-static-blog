@@ -2,6 +2,7 @@
 title: "পাইথন দিয়ে CSV হ্যান্ডেলিং"
 date: 2020-07-23T10:54:55+06:00
 draft: false
+tags: []
 categories: ["Python Database Handelling"]
 ---
 
@@ -31,7 +32,7 @@ Mamun,34,40000
 
 আমরা csv লাইব্রেরী ব্যবহার করতে পারি। পাইথনে csv মডিউল বিল্ড ইন থাকে। এর open() মেথডের মাধ্যমে csv ফাইল রিড করা যায়। উপরের csv ফাইল রিড করার কোড হবে –
 
-```
+```python
 import csv
 with open('salary.csv', 'r') as csv_file:
     reader_obj = csv.reader(csv_file,delimiter = ',')
@@ -53,7 +54,8 @@ with open('salary.csv', 'r') as csv_file:
 ### কিভাবে রাইট করতে হয়?
 
 ধরা যাক salary.csv ফাইলটিতে Ankar নামের একজন বাক্তি যুক্ত হবেন যার বয়স 21 এবং বেতন 18000। তাহলে ফাইলটিকে append মোডে ওপেন করতে হবে। তারপর writer অবজেক্ট তৈরি করে writerow() মেথডের মাধ্যমে রাইট করা যাবে। আবার writerows() এর মাধ্যমে একাধিক সারি যুক্ত করা যায়।
-```
+
+```python
 import csv 
 with open('salary.csv', 'a', newline='') as file:
     writer = csv.writer(file)
