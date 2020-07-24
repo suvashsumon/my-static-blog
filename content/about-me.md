@@ -23,8 +23,8 @@ draft: false
 ## কিভাবে আমার সাথে যোগাযোগ  করবেন
 যদি আপনি আমার সাথে যোগাযোগ করতে চান তবে কোন দ্বিধা ছাড়াই আমাকে মেইল করুন। বিশ্বাস করুন আমি প্রতিদিনই মেইল চেক করি। ফেসবুক আমার পছন্দের সাইট নয়। সুতরাং ফেসবুকে মেসেজ করলে রিপ্লে দেওয়ার নিশ্চয়তা দিতে পারছি না। আর যদি আপনি আমার পরিচিত হন তবে সরাসরি ফোন করুন।
 
-* Github : https://github.com/suvashsumon/
-* Facebook : http://facebook.com/suvashkumar.sumon/
-* Twiter : http://twiter.com/
-* Linkdin : https://www.linkedin.com/in/suvash-kumar-544b5917b
+* Github : [suvashsumon](https://github.com/suvashsumon/)
+* Facebook : [Suvash Kumar Sumon](http://facebook.com/suvashkumar.sumon/)
+* Twiter : [SuvashK13937007](https://twitter.com/SuvashK13937007)
+* Linkdin : [Suvash Kumar](https://www.linkedin.com/in/suvash-kumar-544b5917b)
 * Email : suvashkumar.naogaon@gmail.com
