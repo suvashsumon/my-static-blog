@@ -16,12 +16,15 @@ description = "Developer & Blogger"
 # gravatar = "soho@example.com"
 profilePicture = "images/suvash.png"
 
+# Builder name
+builtWith = "gohugo"
+
 copyright = "Suvash Kumar"
 # license = "CC BY-SA 4.0"
 # licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
 ## Set custom theme color.
-themeColor = "#e67e22"
+themeColor = "#FF8833"
 
 ## Set custom CSS and/or JS to override site defaults.
 customCss = ["css/blog.css"]
