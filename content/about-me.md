@@ -5,23 +5,27 @@ draft: false
 ---
 
 --------------
-এই সাইটে আসার জন্য ধন্যবাদ। আমি নিশ্চিত আপনি জানেন যে এটি সুভাষ কুমারের একটি পার্সোনাল ব্লগ সাইট।
+Thanks for visiting this site. I am sure you know that this is a personal blog site of Suvash Kumar.
 
-সুতরাং, হ্যাঁ, আমার নাম **সুভাষ কুমার**।
+So, yes, my name is Suvash Kumar.
 
-আমি বর্তমানে রাজশাহী বিশ্ববিদ্যালয়ে কম্পিউটার বিজ্ঞান ও প্রকৌশল নিয়ে পড়ছি। এর আগে রাজশাহী সরকারি সিটি কলেজে উচ্চ মাধ্যমিক পড়েছি। এই হল আমার পরিচিতি। সিরিয়াসলি, এইটুকুই।
+I am currently studying Computer Science and Engineering at University of Rajshahi. Earlier, I studied at Rajshahi Government City College. This is my acquaintance. Seriously, that's all.
 
-## আমার লক্ষ্য কি
-হাই স্কুল জীবনের প্রথম দিনই আমি সিদ্ধান্ত নিয়েছি যে আমি একজন ইলেকট্রিকাল ইঞ্জিনিয়ার হব। যেহেতু হার্ডওয়ারের চাইতে সফটওয়ারের প্রতিই আমার বেশি আগ্রহ তাই এখন আমি সফটওয়্যার ইঞ্জিনিয়ার হতে চাই। সুতরাং বর্তমানে আমার লক্ষ্য হল একজন দক্ষ সফটওয়্যার ইঞ্জিনিয়ার হওয়া। অবশ্য আর্টিফিশিয়াল ইন্টিলিজেন্স আমার খুবই আগ্রহের বিষয়। সম্ভব হলে এই ফিল্ডে গবেষণা করতে চাই।
+## What is My Goal
 
-## আমার সময় কাটে কি করে
-দিনের বেশিরভাগ সময় আমি ল্যাপটপ বা ডেস্কটপের সামনে বসে থাকি। বাকি সময় আমার কাটে ক্লাসে, ক্যাম্পাসে, টিউশনিতে, রাজশাহী শহরের বিভিন্ন আলিগলিতে অথবা আমার রুমে ঘুমিয়ে ঘুমিয়ে। পাইথন আর জাভাস্ক্রিপ্ট আমার প্রিয় ল্যাঙ্গুয়েজ। প্রতিনিয়ত আমি ওপেন সোর্স কমিউনিটিতে অবদান রাখার চেষ্টা করি। সময় থাকলে আমার গিটহাব প্রোফাইল ঘুরে আসতে পারেন।
+From the first day of high school life I decided that I would become an electrical engineer. Since I am more interested in software than hardware, now I want to be a software engineer. So my goal right now is to become a skilled software engineer. Also, I am very interested in artificial intelligence. I would like to do research in this field if possible.
 
-## এই ব্লগটির উদ্দেশ্য
-আপনি যদি বাংলাদেশি হন তবে আপনি নিশ্চয়ই জানেন টেকনোলজি বিষয়ে ইন্টারনেটে বাংলা কন্টেন্টের বড়ই অভাব। বেশিরভাগ মানুষকেই ইংরেজি কন্টেন্ট ফলো করতে হয়। যেহেতু আমি অনেক বিষয় নিয়েই ইন্টারনেটে ঘাটাঘাটি করি তাই সেগুলোর কিছু কিছু বিষয় নিয়ে বাংলায় লিখার চেষ্টা করি। অবশ্য মাঝে মাঝে আমি ইংরাজিতেও লিখি।
+## About My Work
 
-## কিভাবে আমার সাথে যোগাযোগ  করবেন
-যদি আপনি আমার সাথে যোগাযোগ করতে চান তবে কোন দ্বিধা ছাড়াই আমাকে মেইল করুন। বিশ্বাস করুন আমি প্রতিদিনই মেইল চেক করি। ফেসবুক আমার পছন্দের সাইট নয়। সুতরাং ফেসবুকে মেসেজ করলে রিপ্লে দেওয়ার নিশ্চয়তা দিতে পারছি না। আর যদি আপনি আমার পরিচিত হন তবে সরাসরি ফোন করুন।
+Most of the day I sit in front of a laptop or desktop. The rest of the time I spend in class, on campus, in tuition, in different alleys of Rajshahi city or sleeping in my room. Python and JavaScript are my favorite languages. I always try to contribute to the open source community. If you have time, you can visit my GitHub profile.
+
+## The Purpose of This Blog
+
+If you are a Bangladeshi, then you must know that there is a great lack of Bangla content on the internet regarding technology. Most people have to follow English content. Since I deal with many topics on the internet, I try to write in Bengali about some of them. Of course sometimes I also write in English.
+
+## Contact Me
+
+If you want to contact me, please mail me without any hesitation. Believe me I check mail every day. Facebook is not my favorite site. So I can't guarantee to reply if you message on Facebook. And if you know me, call me directly.
 
 * Github : [suvashsumon](https://github.com/suvashsumon/)
 * Facebook : [Suvash Kumar Sumon](http://facebook.com/suvashkumar.sumon/)

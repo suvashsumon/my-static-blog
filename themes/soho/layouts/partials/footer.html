@@ -1,7 +1,6 @@
 <footer>
   <div>
     &copy; {{ $.Site.Params.Copyright }} {{ now.Format "2006"}}
-
     {{ with $.Site.Params.License -}}
     &middot; <a href="{{ $.Site.Params.licenseURL }}" target="_blank">{{ . | safeHTML }}</a>
     {{- end }}

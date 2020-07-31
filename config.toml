@@ -85,6 +85,7 @@ customJs = ["js/blog.js"]
 
 
 
+
 [taxonomies]
   category = "categories"
   series = "series"
