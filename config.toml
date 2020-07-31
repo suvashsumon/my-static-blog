@@ -8,6 +8,8 @@ enableInlineShortcodes = true
 summarylength = 10
 enableEmoji = true
 
+disqusShortname = "suvash_kumar"
+
 [params]
 author = "Suvash Kumar"
 description = "Developer & Blogger"
