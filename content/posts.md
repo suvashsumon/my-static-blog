@@ -2,7 +2,7 @@
 title: "Posts"
 date: 2020-07-23T11:13:11+06:00
 draft: false
----
+layout: "page"
 
 --------------
 ### July, 2020

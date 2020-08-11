@@ -2,6 +2,7 @@
 title: "Terms and Conditions"
 date: 2020-07-23T23:31:42+06:00
 draft: false
+layout: "page"
 ---
 
 ---------
