@@ -5,6 +5,9 @@ draft: false
 layout: "page"
 
 --------------
+### August, 2020
+* [HUGO সাইট নেটলিফাই এ পাবলিশ করা](/post/হুগ-সাইট-নেটলিফাই-এ-পাব্লিশিং/)
+
 ### July, 2020
 * [HUGO ব্যবহার করে ব্লগসাইট তৈরি](/post/hugo-deye-blogsite-toiri/)
 * [JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব](/post/jar-to-exe-2/)
