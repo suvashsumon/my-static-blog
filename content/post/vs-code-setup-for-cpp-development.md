@@ -2,6 +2,8 @@
 title: "ডিরেক্টলি কোড রান করার জন্য VS Code সেটআপ"
 date: 2020-08-24T13:24:21+06:00
 draft: false
+tags: ["IDE", "VS Code Setup", "Code Editor"]
+categories: ["VS Code", "VS Code সেটআপ", "Code Editor"]
 ---
 
 ## ভূমিকা
