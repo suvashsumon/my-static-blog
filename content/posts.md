@@ -6,6 +6,7 @@ layout: "page"
 
 --------------
 ### August, 2020
+* [ডিরেক্টলি কোড রান করার জন্য VS Code সেটআপ](/post/vs-code-setup-for-cpp-development/)
 * [HUGO সাইট নেটলিফাই এ পাবলিশ করা](/post/হুগ-সাইট-নেটলিফাই-এ-পাব্লিশিং/)
 
 ### July, 2020
