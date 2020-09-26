@@ -58,6 +58,11 @@ customJs = ["js/blog.js"]
   title = "Email"
   url = "mailto:suvashkumar.naogaon@gmail.com"
 
+  [[params.socialIcons]]
+  icon = "fab fa-medium"
+  title = "Medium"
+  url = "https://medium.com/@suvashkumar.naogaon"
+
 [menu]
 
   [[menu.main]]

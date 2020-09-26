@@ -33,3 +33,4 @@ If you want to contact me, please mail me without any hesitation. Believe me I c
 * Twiter : [SuvashK13937007](https://twitter.com/SuvashK13937007)
 * Linkdin : [Suvash Kumar](https://www.linkedin.com/in/suvash-kumar-544b5917b)
 * Email : suvashkumar.naogaon@gmail.com
+* Medium : [Suvash Kumar's English Blog](https://medium.com/@suvashkumar.naogaon)
