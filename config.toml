@@ -86,9 +86,8 @@ customJs = ["js/blog.js"]
   [[menu.main]]
   name = "Terms & Conditions"
   identifier = "terms-and-conditions"
-  weight = 400
+  weight = 500
   url = "/terms-and-conditions/"
-
 
 
 
