@@ -84,8 +84,8 @@ customJs = ["js/blog.js"]
   url = "/about-me/"
 
   [[menu.main]]
-  name = "Posts in Medium"
-  identifier = "Posts-in-Medium"
+  name = "Posts at Medium"
+  identifier = "Posts-at-Medium"
   weight = 400
   url = "https://medium.com/@suvashkumar.naogaon"
 
