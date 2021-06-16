@@ -16,7 +16,7 @@ description = "Developer & Blogger"
 
 ## Set one of:
 # gravatar = "soho@example.com"
-profilePicture = "images/suvash.png"
+profilePicture = "images/sumon.jpg"
 
 # Builder name
 builtWith = "gohugo"
