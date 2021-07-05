@@ -7,6 +7,7 @@ layout: "page"
 --------------
 
 ### July, 2021
+* [একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা](/post/how-to-host-multiple-site-in-apache-server/)
 * [গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড](/post/deploy-site-to-server-using-git/)
 ### November, 2020
 * [এ আমার কোন দুঃস্বপ্ন নয়](/post/a-amar-kono-dussopno-noy/)

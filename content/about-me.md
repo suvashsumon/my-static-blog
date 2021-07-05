@@ -8,9 +8,9 @@ layout: "page"
 --------------
 Thanks for visiting this site. I am sure you know that this is a personal blog site of Suvash Kumar.
 
-So, yes, my name is Suvash Kumar.
+So, yes, my name is **Suvash Kumar**. I am currently working as an **Intern Software Engineer** in **[Tinkers Technologies Limited](https://tinkers.ltd)**.
 
-I am currently studying Computer Science and Engineering at University of Rajshahi. Earlier, I studied at Rajshahi Government City College. This is my acquaintance. Seriously, that's all.
+I am also a current student of **Computer Science and Engineering** at **University of Rajshahi**. Earlier, I studied at Rajshahi Government City College. This is my acquaintance. Seriously, that's all.
 
 ## What is My Goal
 
@@ -34,3 +34,4 @@ If you want to contact me, please mail me without any hesitation. Believe me I c
 * Linkdin : [Suvash Kumar](https://www.linkedin.com/in/suvash-kumar-544b5917b)
 * Email : suvashkumar.naogaon@gmail.com
 * Medium : [Suvash Kumar's English Blog](https://medium.com/@suvashkumar.naogaon)
+* Youtube : [Suvash Kumar](https://www.youtube.com/channel/UCy1QQPnbhoCA4XXP4Q98G1Q)
