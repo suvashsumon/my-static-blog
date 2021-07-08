@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
 <head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <meta name="google-site-verification" content="7Yr5eqh5fi3Sr2_vYemR3wk5pmBWV6qv9f4K8jIKOt0" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,7 +75,18 @@
   {{ range $.Site.Params.customJs -}}
   <script src="{{ . | relURL }}"></script>
   {{- end}}
-
+  <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
   {{ template "_internal/google_analytics_async.html" . }}
 </body>
 </html>
