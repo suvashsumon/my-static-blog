@@ -1,5 +1,5 @@
 ---
-title: "কমান্ড লাইনের মাদ্ধমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা"
+title: "কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা"
 date: 2021-07-17T11:39:02+06:00
 draft: false
 tags: []
@@ -60,9 +60,9 @@ cd folder_path
 ```
 
 ### ধাপ-৫ঃ ইম্পোর্ট করা
-এইবার sql ফাইলটি new_database ডাটাবেজে ইম্পোর্ট করার জন্য নিচের কমান্ড চালান।
+এইবার sql ফাইলটি new_db ডাটাবেজে ইম্পোর্ট করার জন্য নিচের কমান্ড চালান।
 ```
-mysql -u username -p new_database < datafile.sql
+mysql -u username -p new_db < datafile.sql
 ```
 
 * `username` হল ইউজার নেম।  

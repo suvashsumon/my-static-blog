@@ -7,7 +7,7 @@ layout: "page"
 --------------
 
 ### July, 2021
-* [কমান্ড লাইনের মাদ্ধমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা](/post/how-to-export-import-mysql-database-using-command-line/)
+* [কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা](/post/how-to-export-import-mysql-database-using-command-line/)
 * [একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা](/post/how-to-host-multiple-site-in-apache-server/)
 * [গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড](/post/deploy-site-to-server-using-git/)
 ### November, 2020
