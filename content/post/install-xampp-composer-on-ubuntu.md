@@ -3,7 +3,7 @@ title: "Install XAMPP, Composer on Ubuntu 20.04 LTS or Newer"
 date: 2021-07-28T22:28:51+06:00
 draft: false
 tags: []
-categories: []
+categories: ["XAMPP Server", "PHP", "Composer", "Laravel"]
 ---
 
 XAMPP is a complete package of Apache, MariaDB(MySql), PHP and Perl. XAMPP is completely free software and widely used on Windows platforms for web development and database management. Its easy to install XAMPP on a Windows operating system but complicated to install on a Linux machine. In this article, I am trying to show how to install XAMPP on Ubuntu 20.0.4LTS+.
