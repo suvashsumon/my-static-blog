@@ -27,7 +27,7 @@ copyright = "Suvash Kumar"
 
 ## Set custom theme color.
 ##themeColor = "#2980b9"
-themeColor = "#05c46b"
+themeColor = "#1E293B"
 
 ## Set custom CSS and/or JS to override site defaults.
 customCss = ["css/blog.css"]
@@ -57,7 +57,7 @@ customJs = ["js/blog.js"]
   [[params.socialIcons]]
   icon = "fa fa-envelope"
   title = "Email"
-  url = "mailto:suvashkumar.naogaon@gmail.com"
+  url = "mailto:suvashkumarsumon@yandex.com"
 
   [[params.socialIcons]]
   icon = "fab fa-medium"
