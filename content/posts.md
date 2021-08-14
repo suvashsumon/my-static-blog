@@ -6,6 +6,7 @@ layout: "page"
 ---
 --------------
 ### August, 2021
+* [Linux (Ubuntu) Server Management Cheatsheet](/post/linux-server-management-cheatsheet/)
 * [যেভাবে Mailspring এ ইয়াহু মেইল অ্যাকাউন্ট অ্যাড করবেন (Video)](/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/)
 ### July, 2021
 * [Install XAMPP, Composer on Ubuntu 20.04 LTS or Newer](/post/install-xampp-composer-on-ubuntu/)
