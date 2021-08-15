@@ -23,3 +23,12 @@ sudo grep -i invalid /var/log/apache2/error.log
 sudo service mysql restart/start/stop
 ```
 
+4. To check mysql **error log**:
+```bash
+sudo less /var/log/mysql/error.log
+```
+
+5. To check current status of apache/mysql:
+```bash
+sudo systemctl status mysql/apache2
+```
