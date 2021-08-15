@@ -6,6 +6,7 @@ layout: "page"
 ---
 --------------
 ### August, 2021
+* [Problem Solving Skill: Why is it important? - Simple Explanation (H.M. Sazzad Quadir)](/post/problem-solving-skill-why-is-it-important-simple-explanation/)
 * [Linux (Ubuntu) Server Management Cheatsheet](/post/linux-server-management-cheatsheet/)
 * [যেভাবে Mailspring এ ইয়াহু মেইল অ্যাকাউন্ট অ্যাড করবেন (Video)](/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/)
 ### July, 2021
