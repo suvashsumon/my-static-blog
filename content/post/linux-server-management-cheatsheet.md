@@ -32,3 +32,8 @@ sudo less /var/log/mysql/error.log
 ```bash
 sudo systemctl status mysql/apache2
 ```
+
+6. To unzip a file (you must install unzip on your system)
+```
+unzip file_name.zip
+```
