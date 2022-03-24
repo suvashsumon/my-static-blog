@@ -34,6 +34,6 @@ sudo systemctl status mysql/apache2
 ```
 
 6. To unzip a file (you must install unzip on your system)
-```
+```bash
 unzip file_name.zip
 ```
