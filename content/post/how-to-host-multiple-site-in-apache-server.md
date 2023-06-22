@@ -115,7 +115,9 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 ```bash
 sudo a2dissite 000-default.conf
 ```bash
+
 এবার নতুন তৈরি করা কনফিগারেশন ফাইল এনেবল করার পালা। নিচের কমান্ড দুটি রান করুন - 
+
 ```bash
 sudo a2ensite example.com.conf
 ```
