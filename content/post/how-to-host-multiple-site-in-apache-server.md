@@ -112,6 +112,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 ## ধাপ-৬ঃ কনফিগারেশন ফাইল এনেবল করা
 এই ধাপে আমরা কনফিগারেশন ফাইলগুলো এনেবল করব। তারজন্য প্রথমেই ডিফল্ট কনফিগারেশন ফাইল ডিজেবল করতে হবে। নিচের কমান্ড রান করুন - 
+
 ```bash
 sudo a2dissite 000-default.conf
 ```bash
@@ -121,6 +122,7 @@ sudo a2dissite 000-default.conf
 ```bash
 sudo a2ensite example.com.conf
 ```
+
 ```bash
 sudo a2ensite example.org.conf
 ```
