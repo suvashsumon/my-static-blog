@@ -8,7 +8,7 @@ layout: "page"
 --------------
 Thanks for visiting this site. I am sure you know that this is a personal blog site of Suvash Kumar.
 
-So, yes, my name is **Suvash Kumar**. I am currently working as an **Intern Software Engineer** at **[Tinkers Technologies Limited](https://tinkers.ltd)**.
+So, yes, my name is **Suvash Kumar**. I previously worked as a **Junior Software Engineer** at **[Tinkers Technologies Limited](https://tinkers.ltd)**.
 
 I am also a current student of **Computer Science and Engineering** at **University of Rajshahi**. Earlier, I studied at Rajshahi Government City College. This is my acquaintance. Seriously, that's all.
 
