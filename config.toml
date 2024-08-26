@@ -26,8 +26,8 @@ copyright = "Suvash Kumar"
 # licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
 ## Set custom theme color.
-##themeColor = "#2980b9"
-themeColor = "#1E293B"
+themeColor = "#2980b9"
+##themeColor = "#1E293B"
 
 ## Set custom CSS and/or JS to override site defaults.
 customCss = ["css/blog.css"]
