@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>পাইথন দিয়ে CSV হ্যান্ডেলিং | Suvash Kumar</title>
+<meta name="keywords" content="">
+<meta name="description" content="প্রোগ্রামিং লাংগুয়েজ দিয়ে ডাটাবেজ হ্যান্ডল করা একটা অতি সাধারণ ব্যাপার। তবে এম এস এক্সেল শিট হ্যান্ডল করা খুব বেশি পরিচিত নয়। এই ব্লগটিতে আমি চেষ্টা করব পাইথন দিয়ে এম এস এক্সেল শিট হ্যান্ডল করার কৌশল আলোচনা করতে। হয়তো আপনার কখনও দরকার পড়বে না, অথবা পড়বে। যদি আপনি ব্লগটি শেষ পর্যন্ত পড়তে চান তো স্বাগতম। চলুন শুরু করা যাক।">
+<meta name="author" content="Suvash Kumar">
+<link rel="canonical" href="http://localhost:1313/post/csv-handelling-using-python/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/csv-handelling-using-python/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      পাইথন দিয়ে CSV হ্যান্ডেলিং
+    </h1>
+    <div class="post-meta"><span title='2020-07-23 10:54:55 +0600 +06'>July 23, 2020</span>&nbsp;·&nbsp;Suvash Kumar
+
+</div>
+  </header> 
+  <div class="post-content"><p>প্রোগ্রামিং লাংগুয়েজ দিয়ে ডাটাবেজ হ্যান্ডল করা একটা অতি সাধারণ ব্যাপার। তবে এম এস এক্সেল শিট হ্যান্ডল করা খুব বেশি পরিচিত নয়। এই ব্লগটিতে আমি চেষ্টা করব পাইথন দিয়ে এম এস এক্সেল শিট হ্যান্ডল করার কৌশল আলোচনা করতে। হয়তো আপনার কখনও দরকার পড়বে না, অথবা পড়বে। যদি আপনি ব্লগটি শেষ পর্যন্ত পড়তে চান তো স্বাগতম। চলুন শুরু করা যাক।</p>
+<h3 id="এম-এস-একসল-ফইল-টইপ">এম এস এক্সেল ফাইল টাইপ<a hidden class="anchor" aria-hidden="true" href="#এম-এস-একসল-ফইল-টইপ">#</a></h3>
+<p>এম এস এক্সেল এর দুটি ফাইল টাইপ আছে – .csv (Comma Separated Values) ও .xlxs (Microsoft Excel Worksheet)। দুটোর পার্থক্য ঠিক চোখে পড়েনা। কাজ এবং ফাংশনালিটি প্রায় একই। তবে .xlxs বাইনারি ফাইল হওয়ায় Microsoft Excel বাতিত অন্য সফটওয়ারে ওপেন করলে পড়া অসম্ভব। কিন্তু .csv ফাইল যেকোনো text editor এ দেখা ও এডিট করা সম্ভব। আর এই কারনেই .csv হ্যান্ডল করা সহজ।</p>
+<h3 id="csv-বসতরত">CSV বিস্তারিত<a hidden class="anchor" aria-hidden="true" href="#csv-বসতরত">#</a></h3>
+<p>একটি csv ফাইল হল এক ধরণের plain text ফাইল যা ডেটা সাজানোর জন্য নির্দিষ্ট কাঠামো ব্যবহার করে। ধরুন Microsoft Excel এ salary.csv ফাইল দেখতে এরকম –
+<img loading="lazy" src="/images/july20/csv-file-view.jpg" alt="CSV File View"  />
+</p>
+<p>কিন্তু text editor এ সেটি এরকম দেখাবে-</p>
+<pre tabindex="0"><code>Name,Age,Salary
+Ashik,24,20000
+Sumon,28,22000
+Mamun,34,40000
+</code></pre><p>এই Name,Age,Salary লাইনটি হল হেডার আর পরের লাইনগুলো হল সারি বা row। দেখা যাচ্ছে ভ্যালুগুলো কমা দ্বারা পৃথক করা আছে। এই কমা কে বলা হয় delimiter। অন্যান্য delimiter গুলোর মধ্য ট্যাব, :, ; বেশি ব্যাবহার হয়।</p>
+<h3 id="কভব-রড-করত-হয">কিভাবে রিড করতে হয়?<a hidden class="anchor" aria-hidden="true" href="#কভব-রড-করত-হয">#</a></h3>
+<p>আমরা csv লাইব্রেরী ব্যবহার করতে পারি। পাইথনে csv মডিউল বিল্ড ইন থাকে। এর open() মেথডের মাধ্যমে csv ফাইল রিড করা যায়। উপরের csv ফাইল রিড করার কোড হবে –</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;salary.csv&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> csv_file:
+</span></span><span style="display:flex;"><span>    reader_obj <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>reader(csv_file,delimiter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader_obj:
+</span></span><span style="display:flex;"><span>        print(row)
+</span></span></code></pre></div><p>কোডটির আউটপুট হবে নিচের মত –</p>
+<pre tabindex="0"><code>[&#39;Name&#39;,&#39;Age&#39;,&#39;Salary&#39;]
+[&#39;Ashik&#39;,&#39;24&#39;,&#39;20000&#39;]
+[&#39;Sumon&#39;,&#39;28&#39;,&#39;22000&#39;]
+[&#39;Mamun&#39;,&#39;34&#39;,&#39;40000&#39;]
+</code></pre><p>প্রোগ্রামটি ব্যাখ্যা করা যাক। Import সেকশনে আমরা csv লাইব্রেরী Import করেছি। এরপর open() ফাংশনের মাধ্যমে salary.csv কে রিড মোডে csv_file নামের অবজেক্টে রুপান্তর করা হয়েছে। csv_file দ্বারা একটি রিডার অবজেক্ট তৈরি করেছি। reader() মেথডের দুটি প্যারামিটারের মধ্যে delimiter টি অপশনাল। তবে কমা ছাড়া অন্য delimiter এর ক্ষেত্রে ব্যবহার করাই উত্তম। এবার ফর লুপের দ্বারা ফাইলটির একটি করে লাইন পড়া ও প্রিন্ট করা হয়েছে যেগুলো একেকটি লিস্ট অবজেক্ট। চাইলে DictReader() এর মাদ্ধমেও রিড করা যায়।</p>
+<h3 id="কভব-রইট-করত-হয">কিভাবে রাইট করতে হয়?<a hidden class="anchor" aria-hidden="true" href="#কভব-রইট-করত-হয">#</a></h3>
+<p>ধরা যাক salary.csv ফাইলটিতে Ankar নামের একজন বাক্তি যুক্ত হবেন যার বয়স 21 এবং বেতন 18000। তাহলে ফাইলটিকে append মোডে ওপেন করতে হবে। তারপর writer অবজেক্ট তৈরি করে writerow() মেথডের মাধ্যমে রাইট করা যাবে। আবার writerows() এর মাধ্যমে একাধিক সারি যুক্ত করা যায়।</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;salary.csv&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, newline<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    writer <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>writer(file)
+</span></span><span style="display:flex;"><span>    writer<span style="color:#f92672">.</span>writerow([<span style="color:#e6db74">&#34;Ankar&#34;</span>, <span style="color:#e6db74">&#34;21&#34;</span>, <span style="color:#e6db74">&#34;18000&#34;</span>])
+</span></span></code></pre></div><h3 id="সব-শষ">সব শেষে<a hidden class="anchor" aria-hidden="true" href="#সব-শষ">#</a></h3>
+<p>এই লেখাটি এই পর্যন্তই। আরও জানতে গুগলে সার্চ করুন। এই লেখাটি অবতরনা মাত্র। পাইথনে csv ফাইল নিয়ে কাজ করার জন্য বেশকটি লাইব্রেরী আছে। সেগুলো দেখতে পারেন।</p>
+<p><em>[বিঃদ্রঃ এই লেখাটি আমি লিখেছিলাম যখন আমি দ্বাদশ শ্রেণির শিক্ষার্থী। লেখাটি অত্যন্ত অপাঠ্য। কিন্তু আবেগ থেকেই লেখাটির কোন পরিবর্তন করলাম না।]</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

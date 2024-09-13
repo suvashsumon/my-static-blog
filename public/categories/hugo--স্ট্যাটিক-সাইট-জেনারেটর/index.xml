@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo : স্ট্যাটিক সাইট জেনারেটর on Suvash Kumar</title>
+    <link>http://localhost:1313/categories/hugo--%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%9F%E0%A6%B0/</link>
+    <description>Recent content in Hugo : স্ট্যাটিক সাইট জেনারেটর on Suvash Kumar</description>
+    <generator>Hugo -- 0.134.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Sep 2020 13:24:21 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/hugo--%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%9F%E0%A6%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য</title>
+      <link>http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</link>
+      <pubDate>Sun, 27 Sep 2020 13:24:21 +0600</pubDate>
+      <guid>http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</guid>
+      <description>&lt;p&gt;আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত &lt;a href=&#34;http://localhost:1313/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; এবং &lt;a href=&#34;http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/&#34;&gt;HUGO সাইট নেটলিফাই এ পাবলিশ করা&lt;/a&gt; লেখা দুইটি পড়ে আসতে পারেন।&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HUGO সাইট নেটলিফাই এ পাবলিশ করা</title>
+      <link>http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</link>
+      <pubDate>Wed, 12 Aug 2020 20:00:01 +0600</pubDate>
+      <guid>http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HUGO ব্যবহার করে ব্লগসাইট তৈরি</title>
+      <link>http://localhost:1313/post/hugo-deye-blogsite-toiri/</link>
+      <pubDate>Fri, 31 Jul 2020 20:34:51 +0600</pubDate>
+      <guid>http://localhost:1313/post/hugo-deye-blogsite-toiri/</guid>
+      <description>&lt;h2 id=&#34;ভমক&#34;&gt;ভূমিকা&lt;/h2&gt;
+&lt;p&gt;মাসখানেক ওয়ার্ডপ্রেস ব্যবহার করে একরকম বাধ্য হয়েই স্ট্যাটিক সাইটে মুভ করলাম। ওয়ার্ডপ্রেস ছাড়ার মূল কারন হলো - সার্ভার খরচ এবং সার্ভার ডাউন সমস্যা, ওয়ার্ডপ্রেসের ধীরগতি, SSL সার্টিফিকেট প্রবলেম ইত্যাদি। শিক্ষানবিশ হিসেবে আমার জন্য সার্ভার ও SSL সার্টিফিকেটের খরচ বহন করা সত্যিই কঠিন। আর ফ্রি হোস্টিং এর ব্যপার বোধহয় সবারই জানা। প্রথমে জেকিল ব্যবহার করে সাইট বানাব ভেবেছিলাম কিন্তু কোন অদ্ভুত কারনে জেকিল আমার পিসিতে ইন্সটলই করতে পারলাম না। শেষ পর্যন্ত হুগো ব্যবহারের সিদ্ধান্ত নিলাম। আর প্রথমবার হুগো সাইট ব্রাউজারে দেখে আমার অনুভূতি ছিল - &amp;ldquo;আরেহ্!! এটাই তো চাচ্ছিলাম।&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

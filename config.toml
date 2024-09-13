@@ -1,7 +1,7 @@
 baseURL = "https://suvashkumar.netlify.app"
 languageCode = "en-us"
 title = "Suvash Kumar"
-theme = "soho"
+theme = "papermod"
 
 enableInlineShortcodes = true
 

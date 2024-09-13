@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ফায়ারফক্স on Suvash Kumar</title>
+    <link>http://localhost:1313/categories/%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8/</link>
+    <description>Recent content in ফায়ারফক্স on Suvash Kumar</description>
+    <generator>Hugo -- 0.134.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2020 13:24:21 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>এক্সপোর্ট করুন ফায়ারফক্সে সেভ করা সব ইউজার নেম-পাসওয়ার্ড</title>
+      <link>http://localhost:1313/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</link>
+      <pubDate>Mon, 28 Sep 2020 13:24:21 +0600</pubDate>
+      <guid>http://localhost:1313/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</guid>
+      <description>&lt;p&gt;যদিও ব্রাউজারে পাসওয়ার্ড, ইউজার নেম সেভ করে রাখা উচিত না, তবু আমরা সেটাই করে অভ্যস্ত। এর কারন হয়তোবা বার বার ইউজার নেম বা পাসওয়ার্ড ইনপুট দেওয়ার বিরক্তিকর অভিজ্ঞতা, প্রত্যেক সাইটের আলাদা আলাদা ইউজার নেম-পাসওয়ার্ড ইত্যাদি। কিন্তু ধরুন আপনার ল্যাপটপ বা পিসি চুরি হয়ে গেলো। চোর যদি কোনোভাবে সেটি অন করতে পারে তাহলেই কিন্তু আপনার সব ইউজার নেম-পাসওয়ার্ড পেয়ে যাবে। অর্থাৎ তখন আপনার সব ভার্চুয়াল অ্যাকাউন্টের নিয়ন্ত্রণ তার হাতে। ভাবতে পারছেন!! ব্যাপারটা যখন আমি ভেবেছিলাম তখন আমার বুক ধড়ফড় করতে শুরু করেছিলো। আমি অবশ্য এর একটা বিরক্তিকর সমাধান বের করেছি! যদিও বিরক্তিকর তবু আমার কাছে মনে হয়েছে এইটি অন্তত শতভাগ নিরাপদ। সমাধানটা হল - আমি শুধু আমার জিমেইল অ্যাকাউন্টের পাসওয়ার্ড মনে রাখবো। আর সেটা দিয়ে একটা ক্লাউড স্টোরেজে সব পাসওয়ার্ড সেভ করে রাখবো। অবশ্যই জিমেইলে লগইন করা থাকবে না। যখন দরকার পরবে তখন লগইন করে পাসওয়ার্ড দেখবো। যেহেতু সব সাইটে আমার প্রতিদিন ঢুকতে হয় না, তাই এটা অতটাও কঠিন হবে না।&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

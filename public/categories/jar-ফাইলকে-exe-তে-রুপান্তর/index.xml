@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JAR ফাইলকে EXE তে রুপান্তর on Suvash Kumar</title>
+    <link>http://localhost:1313/categories/jar-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A6%95%E0%A7%87-exe-%E0%A6%A4%E0%A7%87-%E0%A6%B0%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0/</link>
+    <description>Recent content in JAR ফাইলকে EXE তে রুপান্তর on Suvash Kumar</description>
+    <generator>Hugo -- 0.134.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2020 21:06:32 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/jar-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A6%95%E0%A7%87-exe-%E0%A6%A4%E0%A7%87-%E0%A6%B0%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব</title>
+      <link>http://localhost:1313/post/jar-to-exe-2/</link>
+      <pubDate>Thu, 23 Jul 2020 21:06:32 +0600</pubDate>
+      <guid>http://localhost:1313/post/jar-to-exe-2/</guid>
+      <description>&lt;p&gt;আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই &lt;a href=&#34;http://localhost:1313/post/jar-to-exe-1/&#34;&gt;লিঙ্ক&lt;/a&gt; থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব</title>
+      <link>http://localhost:1313/post/jar-to-exe-1/</link>
+      <pubDate>Thu, 23 Jul 2020 20:39:31 +0600</pubDate>
+      <guid>http://localhost:1313/post/jar-to-exe-1/</guid>
+      <description>&lt;p&gt;বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম)  ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়।  বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

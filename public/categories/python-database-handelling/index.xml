@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python Database Handelling on Suvash Kumar</title>
+    <link>http://localhost:1313/categories/python-database-handelling/</link>
+    <description>Recent content in Python Database Handelling on Suvash Kumar</description>
+    <generator>Hugo -- 0.134.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2020 10:54:55 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/python-database-handelling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>পাইথন দিয়ে CSV হ্যান্ডেলিং</title>
+      <link>http://localhost:1313/post/csv-handelling-using-python/</link>
+      <pubDate>Thu, 23 Jul 2020 10:54:55 +0600</pubDate>
+      <guid>http://localhost:1313/post/csv-handelling-using-python/</guid>
+      <description>&lt;p&gt;প্রোগ্রামিং লাংগুয়েজ দিয়ে ডাটাবেজ হ্যান্ডল করা একটা অতি সাধারণ ব্যাপার। তবে এম এস এক্সেল শিট হ্যান্ডল করা খুব বেশি পরিচিত নয়। এই ব্লগটিতে আমি চেষ্টা করব পাইথন দিয়ে এম এস এক্সেল শিট হ্যান্ডল করার কৌশল আলোচনা করতে। হয়তো আপনার কখনও দরকার পড়বে না, অথবা পড়বে। যদি আপনি ব্লগটি শেষ পর্যন্ত পড়তে চান তো স্বাগতম। চলুন শুরু করা যাক।&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
