@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>উবুন্টু সার্ভার on Suvash Kumar</title>
-    <link>http://localhost:1313/categories/%E0%A6%89%E0%A6%AC%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%81-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B0/</link>
+    <link>https://suvashsumon.github.io/categories/%E0%A6%89%E0%A6%AC%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%81-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B0/</link>
     <description>Recent content in উবুন্টু সার্ভার on Suvash Kumar</description>
     <generator>Hugo -- 0.134.1</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Jul 2021 19:47:43 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E0%A6%89%E0%A6%AC%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%81-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suvashsumon.github.io/categories/%E0%A6%89%E0%A6%AC%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%81-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা</title>
-      <link>http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/</link>
+      <link>https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/</link>
       <pubDate>Mon, 05 Jul 2021 19:47:43 +0600</pubDate>
-      <guid>http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/</guid>
+      <guid>https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/</guid>
       <description>&lt;p&gt;অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।&lt;/p&gt;</description>
     </item>
     <item>
       <title>গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড</title>
-      <link>http://localhost:1313/post/deploy-site-to-server-using-git/</link>
+      <link>https://suvashsumon.github.io/post/deploy-site-to-server-using-git/</link>
       <pubDate>Thu, 03 Jun 2021 21:06:32 +0600</pubDate>
-      <guid>http://localhost:1313/post/deploy-site-to-server-using-git/</guid>
+      <guid>https://suvashsumon.github.io/post/deploy-site-to-server-using-git/</guid>
       <description>&lt;p&gt;FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।&lt;/p&gt;</description>
     </item>
   </channel>

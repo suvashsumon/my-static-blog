@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>HUGO সাইট নেটলিফাই এ পাবলিশ করা | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="HUGO ব্যবহার করে ব্লগসাইট তৈরি - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/">
+<link rel="canonical" href="https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/">
+<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,7 +55,71 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:title" content="HUGO সাইট নেটলিফাই এ পাবলিশ করা" />
+<meta property="og:description" content="HUGO ব্যবহার করে ব্লগসাইট তৈরি - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-12T20:00:01+06:00" />
+<meta property="article:modified_time" content="2020-08-12T20:00:01+06:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HUGO সাইট নেটলিফাই এ পাবলিশ করা"/>
+<meta name="twitter:description" content="HUGO ব্যবহার করে ব্লগসাইট তৈরি - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://suvashsumon.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "HUGO সাইট নেটলিফাই এ পাবলিশ করা",
+      "item": "https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "HUGO সাইট নেটলিফাই এ পাবলিশ করা",
+  "name": "HUGO সাইট নেটলিফাই এ পাবলিশ করা",
+  "description": "HUGO ব্যবহার করে ব্লগসাইট তৈরি - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "HUGO ব্যবহার করে ব্লগসাইট তৈরি - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।\nপূর্ব প্রস্তুতি প্রথমে আপনার সাইট ফোল্ডারটির পাথ সংগ্রহ করুন। আমার আগের লিখাটিতে আমি hello-world নামে সাইট তৈরি করেছিলাম এবং পাথ ছিলো E:\\blog-content\\hello-world। এবার ফোল্ডারটিতে প্রবেশ করার জন্য টার্মিনাল খুলে লিখুন cd site-folder-path (site-folder-path এর স্থানে আপনার সাইট ফোল্ডারএর পাথ দিন) এবং এন্টার চাপুন। আপনি আপনার সাইট ফোল্ডারে প্রবেশ করবেন। এবার নিশ্চিত হয়ে নিন যে আপনার সাইট পাবলিশ করার অবস্থায় আছে। যেমন - পোস্টগুলোতে draft: false করা আছে কিনা, টাইটেল ঠিক আছে কিনা ইত্যাদি। পোস্টগুলোতে draft: true করা থাকলে পোস্টগুলো ইউজার দেখতে পারবে না।\nপরের কাজটি হলো - netlify.toml ফাইল তৈরি করা। সাইট ফোল্ডারের যেখানে config.toml ফাইল আছে ঠিক সেখানে netlify.toml নামে একটি নতুন ফাইল তৈরি করুন। ফাইলটি কোন এডিটরে ওপেন করে নিচের কোডটি কপি পেস্ট করুন। HUGO_VERSION = \"0.74.2\" এ আপনার হুগো ভার্সন দিন। আমার আগের লিখাটিতে ভার্সন জানার কৌশল দেখানো হয়েছে।\n[build] publish = \"public\" command = \"hugo\" [context.production.environment] HUGO_VERSION = \"0.74.2\" এবার আমাদের রিপজিটরি তৈরির পালা। গিট রিপজিটরি তৈরি করে তা গিটহাবে হোস্ট করুন। (আশা করি গিট এবং গিটহাব সম্পর্কে ধারণা আছে। না থাকলে ইউটিউব বা কোন ব্লগ থেকে রিপজিটরি তৈরি, ফাইল স্টেজিং এরিয়াতে নেয়া, কমিট করা, গিটহাবে পুশ করা শিখে নিন। হুগো ব্যবহারের জন্য এইটুকুই যথেষ্ট।) নিচের পিকচারটির সহায়তা নিতে পারেন।\nনেটলিফাই এ অ্যাকাউন্ট তৈরি প্রথমেই https://app.netlify.com এ গিয়ে একটি অ্যাকাউন্ট তৈরি করে নিন। এবার নিচের ছবিগুলো অনুসরণ করুন।\nNew site from Git এ ক্লিক করুন।\nগিট প্রভাইডার সিলেক্ট করুন। এই আর্টিকেলে আমি Github ইউজ করেছি। সিলেক্ট করলে অথেনটিকেশন করতে বলবে। তথ্য দিয়ে অথেনটিকেশন সম্পন্ন করুন। সবচাইতে ভাল হয় যদি ব্রাউজারটিতে গিট প্রভাইডার সাইটে লগ ইন করা থাকে।\nরিপজিটরিটি সিলেক্ট করুন। আমার ক্ষেত্রে আমি suvashsumon/Hugo-Testing সিলেক্ট করে দিলাম।\nএইখানে আপনাকে কোন ব্রাঞ্চটি ডিপ্লয় করবেন সেটি এবং বিল্ড কমান্ড দিতে হবে। যেহেতু এখন পর্যন্ত আমাদের রিপজিটরিতে একটি মাত্র ব্রাঞ্চ master তাই Branch to deploy এ master সিলেক্ট করুন। Build command হিসেবে hugo এবং Publish directory হিসেবে public ইনপুট দিন। Deploy site এ ক্লিক করুন।\nসাইট ডিপ্লয় হতে শুরু করবে।\nডিপ্লয় শেষ হলে নেটলিফাই একটি লিঙ্ক প্রভাইড করবে। লিঙ্কটিতে ক্লিক করে আপনি আপনার সাইট ভিজিট করতে পারবেন।\nএবার আমাদের config.toml ফাইলে গিয়ে baseURL = \"http://example.com/\" খুঁজে বের করে http://example.com/ কে লিঙ্কটি দ্বারা রিপ্লেস করতে হবে। নইলে সাইটের কোন লিঙ্কই কাজ করবে না।\nএরপর থেকে সাইটে কোন কিছু পরিবর্তন করলে শুধু git add ., git commit -m \"commit messege\" এবং git push origin master কমান্ড তিনটি রান করেই আপনার সাইট পাবলিশ করতে পারবেন। যেমন আমরা যদি নিচের মত একটি নতুন পোস্ট তৈরি করে সেটি Github এ পুশ করি তবে সেটি সাইটে দেখা যাবে। অবশ্যই draft: false করে দিতে হবে।\n--- title: \"This Is My First Post\" date: 2020-08-12T20:50:32+06:00 draft: false --- Hello World. This is my first post. এবার কাস্টম ডোমেইন নেম সেটআপের পালা। ভাল কোন ডোমেইন নেম প্রভাইডারের কাছ থেকে ডোমেইন কিনুন। এরপর গুগলের সহায়তায় সেটি আপনার সাইটে অ্যাড করুন। হেল্প লাগলে কমেন্ট করে জানাতে পারেন।\n",
+  "wordCount" : "538",
+  "inLanguage": "en",
+  "datePublished": "2020-08-12T20:00:01+06:00",
+  "dateModified": "2020-08-12T20:00:01+06:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suvash Kumar"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Suvash Kumar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suvashsumon.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,17 +163,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://suvashsumon.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="https://suvashsumon.github.io/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about-me/" title="About Me">
+                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -187,7 +251,7 @@ Hello World. This is my first post.
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম)  ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়।  বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="http://localhost:1313/post/jar-to-exe-1/">
+<link rel="canonical" href="https://suvashsumon.github.io/post/jar-to-exe-1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/jar-to-exe-1/">
+<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/jar-to-exe-1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,7 +55,71 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:title" content="JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব" />
+<meta property="og:description" content="বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম)  ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়।  বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://suvashsumon.github.io/post/jar-to-exe-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-07-23T20:39:31+06:00" />
+<meta property="article:modified_time" content="2020-07-23T20:39:31+06:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব"/>
+<meta name="twitter:description" content="বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম)  ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়।  বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://suvashsumon.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব",
+      "item": "https://suvashsumon.github.io/post/jar-to-exe-1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব",
+  "name": "JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব",
+  "description": "বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম) ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়। বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম) ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়। বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।\nJAR ফাইল তৈরি জাভার সেরা তিনটি আইডিই হল Eclipse, InteliJ IDEA, Netbeans - এদের প্রত্যেকটিতেই JAR ফাইল তৈরির পদ্ধতি আলাদা আলাদা। Youtube এর সাহায্য নিলে আশা করি jar তৈরি কোন সমস্যাই হবে না।\nপ্রয়োজনীয় সফটওয়্যার Jar ফাইল কে রিকম্পাইল করে executeble করার জন্য আমাদের লাগবে launch4j নামের সফটওয়্যার এবং executeble টিকে ইন্সটলেবল ফাইলে রুপান্তরের জন্য লাগবে inno setup compiler। এই আপ্লিকেশনগুলো নিচের লিঙ্ক থেকে ডাউনলোড করা যাবে।\nlaunch4j : link\ninno setup compiler : link\nডাউনলোড করার পর ইন্সটল করা অন্যান্য অ্যাপ্লিকেশনের মতই সহজ।\nবেজ ফোল্ডার তৈরি আপনার হয়তো জানা থাকার কথা - কম্পিউটারে ইন্সটল থাকা প্রায় সব অ্যাপ্লিকেশানের একটি নিজস্ব ফোল্ডার থাকে যা সাধারণত C ড্রাইভের Program Files অথবা Program Files (x86) ফোল্ডারের অভ্যন্তরে থাকে। এই ফোল্ডারকে আমরা বলছি বেজ ফোল্ডার। আমরা আমাদের অ্যাপ্লিকেশানের বেজ ফোল্ডারের মধ্য নিচের ফাইল গুলো রাখব।\njre অথবা jdk : যেই ভার্সনের jre অথবা jdk দ্বারা আমাদের অ্যাপ্লিকেশান কম্পাইল করা হয়েছে সেই ভার্সনের jre অথবা jdk। আমদের তৈরি করা jar ফাইল। একটি ico ফাইল : এটি একটি ইমেজ ফাইল। যেটিকে আমরা লোগো বলতে পারি। যেমন - ফায়ারফক্স লোগো, ফটোশপ লোগো। লাইসেন্স ফাইল। অন্যান্য ফাইল/ফোল্ডার প্রয়োজন মত। আপনার কম্পিউটারের ডেস্কটপে Project নামে (আসলে যেকোনো স্থানে যেকোনো নামে, আমি এই আর্টিকেলে আমার ডেস্কটপে Project নামের ফোল্ডার তৈরি করছি) ফোল্ডার তৈরি করুন। আপনার কম্পিউটারে যেখানে জাভা ইন্সটল করা আছে সেখান থেকে jre অথবা jdk ফোল্ডারটি কপি করে Project ফোল্ডারে পেস্ট করুন। পেস্ট করা ফোল্ডারটির সুন্দর নাম দিন, আমি jre নাম দিলাম। ৩, ৪, ৫ নং ফাইল বাধ্যতামূলক নয়। তবে সুন্দর একটা অ্যাপ্লিকেশানের জন্য ico ফাইল জরুরি। আপনার অ্যাপ্লিকেশানের জন্য একটা সুন্দর লোগো তৈরি করুন এবং online ico converter দিয়ে ico তে কনভার্ট করুন। ফাইলটি Project ফোল্ডারে পেস্ট করুন।\nকাজ তাহলে শুরু করা যাক? launch4j ওপেন করার পর আপনি নিচের মত উইন্ডো দেখতে পাবেন । নাম্বারিং গুলো ফলো করুন।\n১ নং চিহ্নিত ঘরে আউটপুট ফাইলের পাথ দিতে হবে। আউটপুট ফাইল বলতে বোঝায় jar কে রি-কম্পাইল করে পাওয়া exe ফাইলকে। এই exe ফাইলকে আমাদের Project ফোল্ডারে রাখতে হবে। যদি আউটপুট ফাইলের নাম হয় application.exe, তবে পাথ হবে C:\\Users\\USER\\Desktop\\Project\\application.exe\n২ নং চিহ্নিত ঘরে আমাদের তৈরি করা jar ফাইলের পাথ বসাতে হবে। আমার ক্ষেত্রে পাথ হবে C:\\Users\\USER\\Desktop\\Project\\application.jar\n৩ নং চিহ্নিত স্থানে আমাদের আপ্লিকেশনের জন্য একটা লোগো দিতে হবে। আমরা একটা লোগোকে ico ফাইলে কনভার্ট করে ফাইলটি Project ফোল্ডারে কপি করেছিলাম। ৩ নং চিহ্নিত স্থানে এই ফাইলের পাথটি দিই। আমার ক্ষেত্রে পাথ হবে C:\\Users\\USER\\Desktop\\Project\\logo.ico\nএবার jre ট্যাবে ক্লিক করুন। নিচের মত উইন্ডো দেখতে পাবেন ।\nচিহ্নিত স্থানে jre লিখুন। এতে launch4j অ্যাপ্লিকেশান আমাদের jar ফাইলকে Project ফোল্ডারের jre দ্বারা কম্পাইল করবে। এই ধাপে ভুল হলে আমাদের অ্যাপ্লিকেশান রান করবে না। আবার bundle jre এর বদলে যদি minimum jre সেট করা হয় তবে jar ফাইলটি আমাদের সিস্টেমের jre দ্বারা কম্পাইল হবে। তখন যেই পিসিতে java ইন্সটল করা নেই সেই পিসিতে আমাদের অ্যাপ্লিকেশান রান করতে পারবে না।\nআমাদের কনফিগারেশন তৈরি। launch4j এর টুলবারের বিল্ড বাটন টি ক্লিক করুন। যদি কোন ফাইল সেভ করতে বলে তবে যেকোনো স্থানে যেকোনো নামে সেভ করুন। কম্পাইল করা শেষ হলে Project ফোল্ডারে application.exe নামে ফাইল তৈরি হবে। ব্যস! আমদের অ্যাপ্লিকেশান তৈরি সম্পন্ন। এবার এর সেটআপ ফাইল তৈরি করা প্রয়োজন যাতে ইউজার আমাদের অ্যাপ্লিকেশানটি ইন্সটল করতে পারে।\nএই মুহূর্তে আমাদের বেজ ফোল্ডারটি এরকম দেখাবে -\nআর্টিকেলটি বড় হয়ে যাচ্ছে। তাই বাকি অংশ ২য় পর্বে দিলাম। এই লিঙ্ক থেকে পড়ে নিন\n",
+  "wordCount" : "632",
+  "inLanguage": "en",
+  "datePublished": "2020-07-23T20:39:31+06:00",
+  "dateModified": "2020-07-23T20:39:31+06:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suvash Kumar"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://suvashsumon.github.io/post/jar-to-exe-1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Suvash Kumar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suvashsumon.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,17 +163,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://suvashsumon.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="https://suvashsumon.github.io/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about-me/" title="About Me">
+                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -182,7 +246,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

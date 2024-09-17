@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>IDE on Suvash Kumar</title>
-    <link>http://localhost:1313/tags/ide/</link>
+    <link>https://suvashsumon.github.io/tags/ide/</link>
     <description>Recent content in IDE on Suvash Kumar</description>
     <generator>Hugo -- 0.134.1</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Aug 2020 13:24:21 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suvashsumon.github.io/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ডিরেক্টলি কোড রান করার জন্য VS Code সেটআপ</title>
-      <link>http://localhost:1313/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</link>
+      <link>https://suvashsumon.github.io/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</link>
       <pubDate>Mon, 24 Aug 2020 13:24:21 +0600</pubDate>
-      <guid>http://localhost:1313/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</guid>
+      <guid>https://suvashsumon.github.io/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</guid>
       <description>&lt;h2 id=&#34;ভমক&#34;&gt;ভূমিকা&lt;/h2&gt;
 &lt;p&gt;আমি জেটব্রিন্স এর প্রোডাক্ট ব্যবহার করে অভ্যস্ত। প্রোজেক্ট টাইপ কাজের জন্য আমি সেগুলোই ব্যবহার করি। তবে ছোট প্রজেক্ট বা সিংগেল ফাইল নিয়ে কাজ করার জন্য জেটব্রিন্স এর আইডিই ব্যবহার করা আসলে মশা মারতে কামান দাগার মত ব্যাপার। কেননা, এই আইডিইগুলো বেশ ভারী আর কিছুটা স্লো। সে ক্ষেত্রে আসলে কোন বিকল্প ভাবতেই হয়। আমরা এই সমস্যা সমাধান করতে পারি VS Code এর মাধ্যমে। যেহেতু কম্পাইলার বা ইন্টারপ্রেটার ইন্সটল করতেই হয়, তাই সামান্য কিছু সেটআপ দিয়ে এই সুবিধাটুকু নিতে পারি।&lt;/p&gt;</description>
     </item>

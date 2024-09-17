@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="http://localhost:1313/post/deploy-site-to-server-using-git/">
+<link rel="canonical" href="https://suvashsumon.github.io/post/deploy-site-to-server-using-git/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/deploy-site-to-server-using-git/">
+<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/deploy-site-to-server-using-git/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,7 +55,71 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:title" content="গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড" />
+<meta property="og:description" content="FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://suvashsumon.github.io/post/deploy-site-to-server-using-git/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-03T21:06:32+06:00" />
+<meta property="article:modified_time" content="2021-06-03T21:06:32+06:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড"/>
+<meta name="twitter:description" content="FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://suvashsumon.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড",
+      "item": "https://suvashsumon.github.io/post/deploy-site-to-server-using-git/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড",
+  "name": "গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড",
+  "description": "FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।\nকিভাবে করব? আচ্ছা আমরা তো github বা এমন কিছু ব্যবহার করি গিটের রিমোট রিপজিটরি হিসেবে। যেহেতু git একাধিক রিমোট রিপজিটরি ব্যবহারের সুযোগ দেয় তাই আমরা সেই সুযোগটাই কাজে লাগাবো। আমাদের সার্ভারে প্রথমে একটা গিট রিপজিটরি তৈরি করে সেটি রিমোট রিপজিটরি হিসেবে ব্যবহার করব। আর সেই রিপজিটরি থেকে ফাইল কপি করে সাইট ফোল্ডারে পাঠানোর জন্য ব্যাবহার করব গিটের Hooks নামের একটা ফিচার।\nকাজটা করব দুটো ধাপে। প্রথম ধাপে সার্ভারে রিমোট রিপো তৈরি করব আর Hooks সেটআপ করব। দ্বিতীয় ধাপে লোকাল গিট রিপোতে লিঙ্ক রিমোট রিপো হিসেবে এড করব। তো শুরু করা যাক।\nসার্ভারে কাজ প্রথমেই সার্ভারে লগইন করতে হবে।\nssh username@server_ip এখানে username হলো আপনার ইউজারনেম আর server_ip হলো সার্ভার আইপি।\nসার্ভারে যদি গিট ইনস্টল করা না থাকে তবে নিচের কমান্ড দিযে গিট ইনস্টল করে নিন।\nsudo apt-get install git এবার গিট রিপো তৈরির পালা। ধরা যাক আমাদের সাইট ফোল্ডার হলো /var/www/html/task। এখন আমি /var ফোল্ডারে repo নামে একটা ফোল্ডার তৈরি করবো। যেখানে আমাদের গিট রিপোটি থাকবে। নিচের কমান্ড রান করি।\nmkdir /var/repo এবার repo ফোল্ডারে প্রবেশ করি।\ncd /var/repo/ এখানে একটি রিপোজিটরি ফোল্ডার তৈরি করি। ধরা যাক সেটির নাম app.git। যেহেতু ফোল্ডারটি গিট রিপো হিসেবে ব্যবহার হবে তাই এটির নামে .git থাকা ভাল।\nনিচের কমান্ড রান করি।\nmkdir app.git এবার app.git এ প্রবেশ করতে হবে।\ncd app.git/ এবার গিট রিপো তৈরির জন্য নিচের কমান্ড রান করি।\ngit init --bare এখানে --bare ফ্লাগ ব্যবহার বাধ্যতামূলক।\nএখন app.git ফোল্ডারে কিছু ফোল্ডার তৈরি হয়ে গেছে। যেখানে hooks নামে একটা ফোল্ডারও আছে। hooks ফোল্ডারে আগে থেকেই কিছু hook তৈরি করা থাকতে পারে। তবে আমরা post-receive নামে hook ব্যবহার করবো।\nএকই সাথে সেটি তৈরি এবং এডিটের জন্য নিচের কমান্ড রান করি।\nnano /var/repo/app.git/hooks/post-receive ন্যানো এডিটর অপেন হবে। এবার নিচের মত কোড লিখি। Ctrl+O দিয়ে এন্টার করি। তারপর Ctrl+X দিয়ে বেরিয়ে আসি।\n#!/bin/sh git --work-tree=site_folder_path --git-dir=repo_folder_path checkout -f site_folder_path হলো আমাদের সাইট ফোল্ডার। আমার ক্ষেত্রে /var/www/html/task. repo_folder_path হলো আমাদের গিট রিপোর লিংক। আমার ক্ষেত্রে /var/repo/app.git এবার হুকটি এক্জিকিউটেবল করতে হবে। সেজন্য নিচের কমান্ড রান করি।\nchmod +x /var/repo/app.git/hooks/post-receive ব্যাস! রিমোট গিট রিপো তৈরি। চাইলে সার্ভার থেকে লগআউট করতে পারি।\nলোকাল পিসিতে কাজ ধরে নিচ্ছি আমাদের একটি গিট রিপো আছে যেটি সার্ভারে পুশ করতে চাই। তো এবার রিপোজিটরিতে আমাদের রিমোট রিপোর লিংক অ্যাড করতে হবে। সেজন্য নিচের মত কমান্ড রান করি।\ngit remote add give_a_name ssh://username@server_ip/repo_link এখানে give_a_name এ পছন্দমত নাম দেওয়া যেতে পারে। যেমন গিটহাবের ক্ষেত্রে দেওয়া হয় origin। ধরা যাক আমি সার্ভারে থাকা রিমোট রিপোর নাম দিলাম server। username এ ইউজার নেম আর server_ip এর জায়গায় সার্ভার আইপি বসাতে হবে। repo_link হিসেবে দিতে হবে রিমোট রিপোটির লিংক। আমার ক্ষেত্রে কমান্ডটি হবে -\ngit remote add server ssh://root@111.11.111.11/var/repo/app.git ব্যাস কাজ শেষ। এবার থেকে লোকাল কম্পিউটারে কোড ইডিট করুন, কমিট করুন আর পুশ করুন।\nএকটি কথা না বললেই নয়, পুশ করার জন্য অবশ্যই পিসিটির ssh public কী সার্ভারে এড করতে হবে। পুশ করার জন্য আমার কমান্ডটি হবে -\ngit push server master server হলো রিমোট রিপোর নাম যেটি আমি সেট করেছিলাম আর master হলো সেই ব্রাঞ্চ যেটি আমি পুশ করতে চাই।\nপুশ শেষে সাইট লিংক ব্রাউজ করে দেখতে পারেন, ফাইল সার্ভারে পৌঁছুলো কিনা।\n",
+  "wordCount" : "533",
+  "inLanguage": "en",
+  "datePublished": "2021-06-03T21:06:32+06:00",
+  "dateModified": "2021-06-03T21:06:32+06:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suvash Kumar"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://suvashsumon.github.io/post/deploy-site-to-server-using-git/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Suvash Kumar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suvashsumon.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,17 +163,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://suvashsumon.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="https://suvashsumon.github.io/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about-me/" title="About Me">
+                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -185,7 +249,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

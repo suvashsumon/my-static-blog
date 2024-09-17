@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux Server on Suvash Kumar</title>
-    <link>http://localhost:1313/categories/linux-server/</link>
+    <link>https://suvashsumon.github.io/categories/linux-server/</link>
     <description>Recent content in Linux Server on Suvash Kumar</description>
     <generator>Hugo -- 0.134.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Aug 2021 20:51:01 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/linux-server/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suvashsumon.github.io/categories/linux-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux (Ubuntu) Server Management Cheatsheet</title>
-      <link>http://localhost:1313/post/linux-server-management-cheatsheet/</link>
+      <link>https://suvashsumon.github.io/post/linux-server-management-cheatsheet/</link>
       <pubDate>Sat, 14 Aug 2021 20:51:01 +0600</pubDate>
-      <guid>http://localhost:1313/post/linux-server-management-cheatsheet/</guid>
+      <guid>https://suvashsumon.github.io/post/linux-server-management-cheatsheet/</guid>
       <description>&lt;p&gt;I started this post for my personal use. However, if you find it useful, you can use it.This post will be edited continuously.&lt;/p&gt;</description>
     </item>
   </channel>

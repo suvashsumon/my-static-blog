@@ -1,8 +1,9 @@
 ---
-title: "Dockerize a Laravel 11 Application"
-date: 2024-09-18
+title: "Dockarize a Laravel 11 Application"
+date: 2024-09-18T01:06:09+06:00
 draft: false
-author: Suvash Kumar
+tags: ["Docker", "Laravel 11"]
+categories: ["Docker", "Laravel 11"]
 ---
 
 Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.

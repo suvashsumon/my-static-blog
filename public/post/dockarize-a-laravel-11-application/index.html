@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Dockarize a Laravel 11 Application | Suvash Kumar</title>
+<meta name="keywords" content="Docker, Laravel 11">
+<meta name="description" content="Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.">
+<meta name="author" content="Suvash Kumar">
+<link rel="canonical" href="https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Dockarize a Laravel 11 Application" />
+<meta property="og:description" content="Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-09-18T01:06:09+06:00" />
+<meta property="article:modified_time" content="2024-09-18T01:06:09+06:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dockarize a Laravel 11 Application"/>
+<meta name="twitter:description" content="Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://suvashsumon.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Dockarize a Laravel 11 Application",
+      "item": "https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dockarize a Laravel 11 Application",
+  "name": "Dockarize a Laravel 11 Application",
+  "description": "Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.\n",
+  "keywords": [
+    "Docker", "Laravel 11"
+  ],
+  "articleBody": "Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.\nPrerequisites Before starting, ensure you have the following installed on your machine:\nDocker Docker Compose Laravel 11 installed or a new project created. If you don’t have Laravel 11 yet, you can create one by running: composer create-project laravel/laravel example-app Step 1: Create a Dockerfile A Dockerfile is a set of instructions Docker uses to create a container image. At the root of your Laravel project, create a file named Dockerfile:\n# Use an official PHP image with Apache FROM php:8.2-apache # Set working directory WORKDIR /var/www/html # Install system dependencies RUN apt-get update \u0026\u0026 apt-get install -y \\ git \\ curl \\ libpng-dev \\ libonig-dev \\ libxml2-dev \\ zip \\ unzip # Install PHP extensions required by Laravel RUN docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd # Enable Apache mod_rewrite for Laravel routing RUN a2enmod rewrite # Install Composer COPY --from=composer:latest /usr/bin/composer /usr/bin/composer # Copy existing application directory contents COPY . /var/www/html # Set permissions for Laravel storage and cache folders RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache # Expose port 80 to access the application EXPOSE 80 # Start Apache CMD [\"apache2-foreground\"] In this Dockerfile, we:\nUse the PHP 8.2 image with Apache installed. Install necessary PHP extensions that Laravel requires. Copy the application code into the container and set appropriate permissions. Expose port 80 for HTTP access. Step 2: Set Up Docker Compose Docker Compose simplifies the management of multi-container Docker applications. It allows you to define services (e.g., Laravel app, database) and manage them with a single command. At the root of your project, create a docker-compose.yml file:\nversion: '3.8' services: app: build: context: . dockerfile: Dockerfile container_name: laravel_app ports: - \"8000:80\" volumes: - .:/var/www/html environment: - APP_ENV=local - APP_DEBUG=true - APP_KEY=base64:YourAppKeyHere depends_on: - db db: image: mysql:8.0 container_name: mysql_db environment: MYSQL_DATABASE: laravel MYSQL_ROOT_PASSWORD: secret MYSQL_USER: laravel MYSQL_PASSWORD: secret volumes: - db_data:/var/lib/mysql ports: - \"3306:3306\" volumes: db_data: In this docker-compose.yml file, we define two services:\n$app:$ This is the Laravel app container built from the Dockerfile. We map port 80 inside the container to port 8000 on our local machine, so we can access the app at http://localhost:8000. $db:$ The MySQL database service, where we set environment variables for database credentials. Step 3: Configure Laravel Environment Now, update the .env file of your Laravel application to match the database settings in the docker-compose.yml:\nDB_CONNECTION=mysql DB_HOST=db DB_PORT=3306 DB_DATABASE=laravel DB_USERNAME=laravel DB_PASSWORD=secret Make sure you have a valid APP_KEY. If not, you can generate one using the command:\nphp artisan key:generate Step 4: Build and Run the Containers With the Dockerfile, docker-compose.yml, and environment configuration in place, you’re ready to build and run the Docker containers. In your terminal, run the following command:\ndocker-compose up --build This command will:\nBuild the Docker image based on the Dockerfile. Spin up the app and db containers. Map the ports so you can access the Laravel application on your local machine. Once the process is complete, visit http://localhost:8000 in your browser to see your Laravel 11 application running inside Docker.\nStep 5: Managing the Containers To stop the containers, press Ctrl + C in the terminal where Docker is running, or use: docker-compose down To bring the containers back up without rebuilding: docker-compose up For Laravel to work smoothly in Docker, you might need to run certain artisan commands inside the app container. For example, to run migrations: docker-compose exec app php artisan migrate Step 6: Optimizing for Production When deploying to production, you should:\nDisable debugging (APP_DEBUG=false) in your .env file. Set up a separate production-ready database configuration. Optimize the Laravel application by running: docker-compose exec app php artisan config:cache docker-compose exec app php artisan route:cache docker-compose exec app php artisan view:cache Conclusion Dockerizing your Laravel 11 application offers numerous advantages, from streamlining local development to ensuring consistent deployment environments. By following this guide, you now have a Laravel app running in Docker with minimal effort. You can further customize your Docker setup based on specific project needs, such as adding Redis, Nginx, or other services as needed. Happy coding!\n",
+  "wordCount" : "722",
+  "inLanguage": "en",
+  "datePublished": "2024-09-18T01:06:09+06:00",
+  "dateModified": "2024-09-18T01:06:09+06:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suvash Kumar"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Suvash Kumar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suvashsumon.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://suvashsumon.github.io/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://suvashsumon.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dockarize a Laravel 11 Application
+    </h1>
+    <div class="post-meta"><span title='2024-09-18 01:06:09 +0600 +06'>September 18, 2024</span>&nbsp;·&nbsp;Suvash Kumar
+
+</div>
+  </header> 
+  <div class="post-content"><p>Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.</p>
+<h2 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h2>
+<p>Before starting, ensure you have the following installed on your machine:</p>
+<ul>
+<li><a href="https://docs.docker.com/get-docker/">Docker</a></li>
+<li><a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
+<li>Laravel 11 installed or a new project created. If you don’t have Laravel 11 yet, you can create one by running:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>composer create-project laravel/laravel example-app
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="step-1-create-a-dockerfile">Step 1: Create a <code>Dockerfile</code><a hidden class="anchor" aria-hidden="true" href="#step-1-create-a-dockerfile">#</a></h2>
+<p>A <code>Dockerfile</code> is a set of instructions Docker uses to create a container image. At the root of your Laravel project, create a file named <code>Dockerfile</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Use an official PHP image with Apache</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> php:8.2-apache</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set working directory</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /var/www/html</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install system dependencies</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update <span style="color:#f92672">&amp;&amp;</span> apt-get install -y <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    git <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    curl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libpng-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libonig-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libxml2-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    zip <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    unzip<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install PHP extensions required by Laravel</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Enable Apache mod_rewrite for Laravel routing</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> a2enmod rewrite<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install Composer</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> --from<span style="color:#f92672">=</span>composer:latest /usr/bin/composer /usr/bin/composer<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy existing application directory contents</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /var/www/html<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set permissions for Laravel storage and cache folders</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Expose port 80 to access the application</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 80</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Start Apache</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;apache2-foreground&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>In this Dockerfile, we:</p>
+<ul>
+<li>Use the PHP 8.2 image with Apache installed.</li>
+<li>Install necessary PHP extensions that Laravel requires.</li>
+<li>Copy the application code into the container and set appropriate permissions.</li>
+<li>Expose port 80 for HTTP access.</li>
+</ul>
+<h2 id="step-2-set-up-docker-compose">Step 2: Set Up Docker Compose<a hidden class="anchor" aria-hidden="true" href="#step-2-set-up-docker-compose">#</a></h2>
+<p>Docker Compose simplifies the management of multi-container Docker applications. It allows you to define services (e.g., Laravel app, database) and manage them with a single command. At the root of your project, create a <code>docker-compose.yml</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.8&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">app</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">context</span>: <span style="color:#ae81ff">.</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">dockerfile</span>: <span style="color:#ae81ff">Dockerfile</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">laravel_app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;8000:80&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">.:/var/www/html</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">APP_ENV=local</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">APP_DEBUG=true</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">APP_KEY=base64:YourAppKeyHere</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">depends_on</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mysql:8.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">mysql_db</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_DATABASE</span>: <span style="color:#ae81ff">laravel</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_ROOT_PASSWORD</span>: <span style="color:#ae81ff">secret</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_USER</span>: <span style="color:#ae81ff">laravel</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_PASSWORD</span>: <span style="color:#ae81ff">secret</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db_data:/var/lib/mysql</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;3306:3306&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db_data</span>:
+</span></span></code></pre></div><p>In this <code>docker-compose.yml</code> file, we define two services:</p>
+<ol>
+<li>$app:$ This is the Laravel app container built from the <code>Dockerfile</code>. We map port 80 inside the container to port 8000 on our local machine, so we can access the app at <code>http://localhost:8000</code>.</li>
+<li>$db:$ The MySQL database service, where we set environment variables for database credentials.</li>
+</ol>
+<h2 id="step-3-configure-laravel-environment">Step 3: Configure Laravel Environment<a hidden class="anchor" aria-hidden="true" href="#step-3-configure-laravel-environment">#</a></h2>
+<p>Now, update the <code>.env</code> file of your Laravel application to match the database settings in the <code>docker-compose.yml</code>:</p>
+<pre tabindex="0"><code class="language-dotenv" data-lang="dotenv">DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=laravel
+DB_PASSWORD=secret
+</code></pre><p>Make sure you have a valid <code>APP_KEY</code>. If not, you can generate one using the command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php artisan key:generate
+</span></span></code></pre></div><h2 id="step-4-build-and-run-the-containers">Step 4: Build and Run the Containers<a hidden class="anchor" aria-hidden="true" href="#step-4-build-and-run-the-containers">#</a></h2>
+<p>With the <code>Dockerfile</code>, <code>docker-compose.yml</code>, and environment configuration in place, you’re ready to build and run the Docker containers. In your terminal, run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose up --build
+</span></span></code></pre></div><p>This command will:</p>
+<ol>
+<li>Build the Docker image based on the Dockerfile.</li>
+<li>Spin up the <code>app</code> and <code>db</code> containers.</li>
+<li>Map the ports so you can access the Laravel application on your local machine.</li>
+</ol>
+<p>Once the process is complete, visit <code>http://localhost:8000</code> in your browser to see your Laravel 11 application running inside Docker.</p>
+<h2 id="step-5-managing-the-containers">Step 5: Managing the Containers<a hidden class="anchor" aria-hidden="true" href="#step-5-managing-the-containers">#</a></h2>
+<ul>
+<li>To stop the containers, press Ctrl + C in the terminal where Docker is running, or use:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose down
+</span></span></code></pre></div></li>
+<li>To bring the containers back up without rebuilding:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose up
+</span></span></code></pre></div></li>
+<li>For Laravel to work smoothly in Docker, you might need to run certain artisan commands inside the app container. For example, to run migrations:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose exec app php artisan migrate
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="step-6-optimizing-for-production">Step 6: Optimizing for Production<a hidden class="anchor" aria-hidden="true" href="#step-6-optimizing-for-production">#</a></h2>
+<p>When deploying to production, you should:</p>
+<ol>
+<li>Disable debugging (APP_DEBUG=false) in your .env file.</li>
+<li>Set up a separate production-ready database configuration.</li>
+<li>Optimize the Laravel application by running:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose exec app php artisan config:cache
+</span></span><span style="display:flex;"><span>docker-compose exec app php artisan route:cache
+</span></span><span style="display:flex;"><span>docker-compose exec app php artisan view:cache
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Dockerizing your Laravel 11 application offers numerous advantages, from streamlining local development to ensuring consistent deployment environments. By following this guide, you now have a Laravel app running in Docker with minimal effort. You can further customize your Docker setup based on specific project needs, such as adding Redis, Nginx, or other services as needed. Happy coding!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://suvashsumon.github.io/tags/docker/">Docker</a></li>
+      <li><a href="https://suvashsumon.github.io/tags/laravel-11/">Laravel 11</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
