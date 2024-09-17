@@ -4,3 +4,4 @@
 
 [context.production.environment]
   HUGO_VERSION = "0.134.0"
+  NODE_VERSION = ">=18.12.1"
