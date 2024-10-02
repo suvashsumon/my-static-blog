@@ -2,73 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Suvash Kumar</title>
-    <link>https://suvashsumon.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Suvash Kumar</description>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Sep 2024 01:06:09 +0600</lastBuildDate>
-    <atom:link href="https://suvashsumon.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Oct 2024 12:26:38 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Word Count Program in Hadoop</title>
+      <link>http://localhost:1313/post/word-count-program-in-hadoop/</link>
+      <pubDate>Wed, 02 Oct 2024 12:26:38 +0600</pubDate>
+      <guid>http://localhost:1313/post/word-count-program-in-hadoop/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This tutorial will guide you through building a Word Count program using the Hadoop MapReduce framework. The basic idea is to store the input file in the HDFS structure of Hadoop and run the program from the local machine. The program will read this input file, count the number of words, and write the result back to HDFS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dockerize a Laravel 11 Application</title>
+      <link>http://localhost:1313/post/dockarize-laravel-11-application/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/dockarize-laravel-11-application/</guid>
+      <description>&lt;p&gt;Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Dockarize a Laravel 11 Application</title>
-      <link>https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/</link>
+      <link>http://localhost:1313/post/dockarize-a-laravel-11-application/</link>
       <pubDate>Wed, 18 Sep 2024 01:06:09 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/dockarize-a-laravel-11-application/</guid>
+      <guid>http://localhost:1313/post/dockarize-a-laravel-11-application/</guid>
       <description>&lt;p&gt;Dockerizing a Laravel 11 application provides a consistent development environment, ensuring your application runs the same across different systems. This is especially useful in teams where developers may have different system configurations or when deploying to production. In this guide, we’ll walk through the steps to Dockerize a Laravel 11 application from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Problem Solving Skill: Why is it important? - Simple Explanation</title>
-      <link>https://suvashsumon.github.io/post/problem-solving-skill-why-is-it-important-simple-explanation/</link>
+      <link>http://localhost:1313/post/problem-solving-skill-why-is-it-important-simple-explanation/</link>
       <pubDate>Sun, 15 Aug 2021 09:05:50 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/problem-solving-skill-why-is-it-important-simple-explanation/</guid>
+      <guid>http://localhost:1313/post/problem-solving-skill-why-is-it-important-simple-explanation/</guid>
       <description>&lt;p&gt;Problem solving is a part of our daily life, both at home or in the workplace. For that very reason we can say that problem solving skills are important in our life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Creating New Database User and Grant Permissions</title>
+      <link>http://localhost:1313/post/creating-new-database-user-and-grant-permissions/</link>
+      <pubDate>Sat, 14 Aug 2021 23:40:38 +0600</pubDate>
+      <guid>http://localhost:1313/post/creating-new-database-user-and-grant-permissions/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;First log in to mysql:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mysql -u root -p
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Create new user&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE USER &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ameenruhul&amp;#39;&lt;/span&gt;@&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt; IDENTIFIED BY &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ac?Z6&amp;amp;7XvT#hyE6w&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Grant Privilages&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GRANT * ON database_name.table_name TO &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;@&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;GRANT ALL PRIVILEGES ON blog.* TO &amp;#39;ameenruhul&amp;#39;@&amp;#39;localhost&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Now last step&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FLUSH PRIVILEGES;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
       <title>Linux (Ubuntu) Server Management Cheatsheet</title>
-      <link>https://suvashsumon.github.io/post/linux-server-management-cheatsheet/</link>
+      <link>http://localhost:1313/post/linux-server-management-cheatsheet/</link>
       <pubDate>Sat, 14 Aug 2021 20:51:01 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/linux-server-management-cheatsheet/</guid>
+      <guid>http://localhost:1313/post/linux-server-management-cheatsheet/</guid>
       <description>&lt;p&gt;I started this post for my personal use. However, if you find it useful, you can use it.This post will be edited continuously.&lt;/p&gt;</description>
     </item>
     <item>
       <title>যেভাবে  Mailspring এ ইয়াহু মেইল অ্যাকাউন্ট অ্যাড করবেন (Video)</title>
-      <link>https://suvashsumon.github.io/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/</link>
+      <link>http://localhost:1313/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/</link>
       <pubDate>Tue, 10 Aug 2021 22:16:05 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/</guid>
+      <guid>http://localhost:1313/post/how-to-add-yahoo-mail-to-mailspring-desktop-client/</guid>
       <description>&lt;p&gt;Mailspring প্রচুর ফিচার এবং দারুণ ইউজার ইন্টারফেস সম্বলিত ডেক্সটপ মেইল ক্লায়েন্ট। Gmail, Yahoo, Outlook/Hotmail, Yandex, ProtonMail সব অ্যাকাউন্টের এক ও অভিন্ন ঠিকানা হতে পারে  মেইলস্প্রিং ।  কিভাবে  Mailspring এ ইয়াহু মেইল অ্যাকাউন্ট অ্যাড করবেন সেটাই এই ভিডিও তে দেখানোর চেষ্টা করেছি।&lt;/p&gt;</description>
     </item>
     <item>
+      <title>How to Change Git Remote Origin</title>
+      <link>http://localhost:1313/post/how-to-change-git-remote-origin/</link>
+      <pubDate>Mon, 02 Aug 2021 22:14:21 +0600</pubDate>
+      <guid>http://localhost:1313/post/how-to-change-git-remote-origin/</guid>
+      <description>&lt;p&gt;To change your remote origin link:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote set-url your_new_remote_origin_link
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To see changes:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Install XAMPP, Composer on Ubuntu 20.04 LTS or Newer</title>
-      <link>https://suvashsumon.github.io/post/install-xampp-composer-on-ubuntu/</link>
+      <link>http://localhost:1313/post/install-xampp-composer-on-ubuntu/</link>
       <pubDate>Wed, 28 Jul 2021 22:28:51 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/install-xampp-composer-on-ubuntu/</guid>
+      <guid>http://localhost:1313/post/install-xampp-composer-on-ubuntu/</guid>
       <description>&lt;p&gt;XAMPP is a complete package of Apache, MariaDB(MySql), PHP and Perl. XAMPP is completely free software and widely used on Windows platforms for web development and database management. Its easy to install XAMPP on a Windows operating system but complicated to install on a Linux machine. In this article, I am trying to show how to install XAMPP on Ubuntu 20.0.4LTS+.&lt;/p&gt;</description>
     </item>
     <item>
       <title>কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা</title>
-      <link>https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/</link>
+      <link>http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/</link>
       <pubDate>Sat, 17 Jul 2021 11:39:02 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/</guid>
+      <guid>http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/</guid>
       <description>&lt;p&gt;আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।&lt;/p&gt;</description>
     </item>
     <item>
       <title>একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা</title>
-      <link>https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/</link>
+      <link>http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/</link>
       <pubDate>Mon, 05 Jul 2021 19:47:43 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/</guid>
+      <guid>http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/</guid>
       <description>&lt;p&gt;অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।&lt;/p&gt;</description>
     </item>
     <item>
       <title>গিট ব্যবহার করে উবুন্টু সার্ভারে ফাইল আপলোড</title>
-      <link>https://suvashsumon.github.io/post/deploy-site-to-server-using-git/</link>
+      <link>http://localhost:1313/post/deploy-site-to-server-using-git/</link>
       <pubDate>Thu, 03 Jun 2021 21:06:32 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/deploy-site-to-server-using-git/</guid>
+      <guid>http://localhost:1313/post/deploy-site-to-server-using-git/</guid>
       <description>&lt;p&gt;FTP ক্লায়েন্ট ব্যবহার করে রিমোট সার্ভারে ফাইল আপলোড করা বেশ সময় সাপেক্ষ আর কষ্টকরও। কেমন হয় যদি git ব্যাবহার করে একটি মাত্র কমান্ড দিয়ে সার্ভারে ফাইল আপলোড করা যায়? এই লেখাটিতে সেই উপায়টিই বাতলে দেওয়ার চেষ্টা করছি।&lt;/p&gt;</description>
     </item>
     <item>
       <title>এ আমার কোন দুঃস্বপ্ন নয়</title>
-      <link>https://suvashsumon.github.io/post/a-amar-kono-dussopno-noy/</link>
+      <link>http://localhost:1313/post/a-amar-kono-dussopno-noy/</link>
       <pubDate>Wed, 11 Nov 2020 19:21:54 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/a-amar-kono-dussopno-noy/</guid>
+      <guid>http://localhost:1313/post/a-amar-kono-dussopno-noy/</guid>
       <description>&lt;p&gt;চকিতে ফেরানো মুখ,&lt;br&gt;
 মেঘকালো চুলে ঢেকে থাকা&lt;br&gt;
 তোমার ললাটে যদি এঁকে দিতে পারি&lt;br&gt;
@@ -79,38 +127,38 @@
     </item>
     <item>
       <title>আমার একটা অনুপ্রেরণা চাই</title>
-      <link>https://suvashsumon.github.io/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</link>
+      <link>http://localhost:1313/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</link>
       <pubDate>Tue, 06 Oct 2020 18:30:34 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</guid>
+      <guid>http://localhost:1313/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</guid>
       <description>&lt;p&gt;আমার অনুপ্রেরণা চাই। হুম,&lt;br&gt;
 ওইটাই - তোমরা যাকে মোটিভেশন বলো।&lt;/p&gt;</description>
     </item>
     <item>
       <title>এক্সপোর্ট করুন ফায়ারফক্সে সেভ করা সব ইউজার নেম-পাসওয়ার্ড</title>
-      <link>https://suvashsumon.github.io/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</link>
+      <link>http://localhost:1313/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</link>
       <pubDate>Mon, 28 Sep 2020 13:24:21 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</guid>
+      <guid>http://localhost:1313/post/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8-%E0%A6%AB%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AB%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B8%E0%A7%87%E0%A6%AD-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%AC-%E0%A6%87%E0%A6%89%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1/</guid>
       <description>&lt;p&gt;যদিও ব্রাউজারে পাসওয়ার্ড, ইউজার নেম সেভ করে রাখা উচিত না, তবু আমরা সেটাই করে অভ্যস্ত। এর কারন হয়তোবা বার বার ইউজার নেম বা পাসওয়ার্ড ইনপুট দেওয়ার বিরক্তিকর অভিজ্ঞতা, প্রত্যেক সাইটের আলাদা আলাদা ইউজার নেম-পাসওয়ার্ড ইত্যাদি। কিন্তু ধরুন আপনার ল্যাপটপ বা পিসি চুরি হয়ে গেলো। চোর যদি কোনোভাবে সেটি অন করতে পারে তাহলেই কিন্তু আপনার সব ইউজার নেম-পাসওয়ার্ড পেয়ে যাবে। অর্থাৎ তখন আপনার সব ভার্চুয়াল অ্যাকাউন্টের নিয়ন্ত্রণ তার হাতে। ভাবতে পারছেন!! ব্যাপারটা যখন আমি ভেবেছিলাম তখন আমার বুক ধড়ফড় করতে শুরু করেছিলো। আমি অবশ্য এর একটা বিরক্তিকর সমাধান বের করেছি! যদিও বিরক্তিকর তবু আমার কাছে মনে হয়েছে এইটি অন্তত শতভাগ নিরাপদ। সমাধানটা হল - আমি শুধু আমার জিমেইল অ্যাকাউন্টের পাসওয়ার্ড মনে রাখবো। আর সেটা দিয়ে একটা ক্লাউড স্টোরেজে সব পাসওয়ার্ড সেভ করে রাখবো। অবশ্যই জিমেইলে লগইন করা থাকবে না। যখন দরকার পরবে তখন লগইন করে পাসওয়ার্ড দেখবো। যেহেতু সব সাইটে আমার প্রতিদিন ঢুকতে হয় না, তাই এটা অতটাও কঠিন হবে না।&lt;/p&gt;</description>
     </item>
     <item>
       <title>HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য</title>
-      <link>https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</link>
+      <link>http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</link>
       <pubDate>Sun, 27 Sep 2020 13:24:21 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</guid>
-      <description>&lt;p&gt;আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত &lt;a href=&#34;https://suvashsumon.github.io/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; এবং &lt;a href=&#34;https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/&#34;&gt;HUGO সাইট নেটলিফাই এ পাবলিশ করা&lt;/a&gt; লেখা দুইটি পড়ে আসতে পারেন।&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/</guid>
+      <description>&lt;p&gt;আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত &lt;a href=&#34;http://localhost:1313/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; এবং &lt;a href=&#34;http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/&#34;&gt;HUGO সাইট নেটলিফাই এ পাবলিশ করা&lt;/a&gt; লেখা দুইটি পড়ে আসতে পারেন।&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vs Code Setup for Running Program Directly</title>
-      <link>https://suvashsumon.github.io/post/vs-code-setup-for-cpp-development-english/</link>
+      <link>http://localhost:1313/post/vs-code-setup-for-cpp-development-english/</link>
       <pubDate>Thu, 24 Sep 2020 20:05:24 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/vs-code-setup-for-cpp-development-english/</guid>
+      <guid>http://localhost:1313/post/vs-code-setup-for-cpp-development-english/</guid>
       <description>&lt;p&gt;This post is published at medium.com on September 09, 2020. For copyright issue this post didn&amp;rsquo;t published here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>কবিতা - ১</title>
-      <link>https://suvashsumon.github.io/post/kobita-1/</link>
+      <link>http://localhost:1313/post/kobita-1/</link>
       <pubDate>Wed, 09 Sep 2020 23:30:03 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/kobita-1/</guid>
+      <guid>http://localhost:1313/post/kobita-1/</guid>
       <description>&lt;p&gt;কাজলকালো চোখের নিচে জোৎস্নাকালো দাগ,&lt;br&gt;
 ফুলো নাকে জমিয়ে রাখা রাগ,&lt;br&gt;
 তোমার সকল কষ্ট - যাও ভুলে,&lt;br&gt;
@@ -136,53 +184,53 @@
     </item>
     <item>
       <title>ডিরেক্টলি কোড রান করার জন্য VS Code সেটআপ</title>
-      <link>https://suvashsumon.github.io/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</link>
+      <link>http://localhost:1313/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</link>
       <pubDate>Mon, 24 Aug 2020 13:24:21 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</guid>
+      <guid>http://localhost:1313/post/%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A1-%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-vs-code-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%86%E0%A6%AA/</guid>
       <description>&lt;h2 id=&#34;ভমক&#34;&gt;ভূমিকা&lt;/h2&gt;
 &lt;p&gt;আমি জেটব্রিন্স এর প্রোডাক্ট ব্যবহার করে অভ্যস্ত। প্রোজেক্ট টাইপ কাজের জন্য আমি সেগুলোই ব্যবহার করি। তবে ছোট প্রজেক্ট বা সিংগেল ফাইল নিয়ে কাজ করার জন্য জেটব্রিন্স এর আইডিই ব্যবহার করা আসলে মশা মারতে কামান দাগার মত ব্যাপার। কেননা, এই আইডিইগুলো বেশ ভারী আর কিছুটা স্লো। সে ক্ষেত্রে আসলে কোন বিকল্প ভাবতেই হয়। আমরা এই সমস্যা সমাধান করতে পারি VS Code এর মাধ্যমে। যেহেতু কম্পাইলার বা ইন্টারপ্রেটার ইন্সটল করতেই হয়, তাই সামান্য কিছু সেটআপ দিয়ে এই সুবিধাটুকু নিতে পারি।&lt;/p&gt;</description>
     </item>
     <item>
       <title>HUGO সাইট নেটলিফাই এ পাবলিশ করা</title>
-      <link>https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</link>
+      <link>http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</link>
       <pubDate>Wed, 12 Aug 2020 20:00:01 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://suvashsumon.github.io/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/%E0%A6%B9%E0%A7%81%E0%A6%97-%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%B2%E0%A6%BF%E0%A6%AB%E0%A6%BE%E0%A6%87-%E0%A6%8F-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%82/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/post/hugo-deye-blogsite-toiri/&#34;&gt;HUGO ব্যবহার করে ব্লগসাইট তৈরি&lt;/a&gt; - এই লিখাটিতে হুগো দিয়ে সাইট তৈরির মৌলিক বিষয় নিয়ে আলোচনা করেছিলাম। সাইট যেহেতু শুধু হার্ডডিস্কে রেখে দেওয়ার জিনিস নয় তাই তৈরির সাথে সাথে সেটি পাবলিশ করাও জরুরি একটি কাজ। হুগো সাইট প্রায় সব ধরণের সার্ভারে হোস্ট করা সম্ভব। এই আর্টিকেলে আমি নেটলিফাই ব্যবহার করে হোস্ট করব। সেজন্য আমাদের দরকার  git, github সম্পর্কে বেসিক ধারণা। একই সাথে আপনার পিসিতে  Git ইন্সটল থাকতে হবে। Git ডাউনলোড করা যাবে git-scm.org সাইট থেকে। আর ইন্সটল করা অন্যান্য সফটওয়্যারের মতই।&lt;/p&gt;</description>
     </item>
     <item>
       <title>HUGO ব্যবহার করে ব্লগসাইট তৈরি</title>
-      <link>https://suvashsumon.github.io/post/hugo-deye-blogsite-toiri/</link>
+      <link>http://localhost:1313/post/hugo-deye-blogsite-toiri/</link>
       <pubDate>Fri, 31 Jul 2020 20:34:51 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/hugo-deye-blogsite-toiri/</guid>
+      <guid>http://localhost:1313/post/hugo-deye-blogsite-toiri/</guid>
       <description>&lt;h2 id=&#34;ভমক&#34;&gt;ভূমিকা&lt;/h2&gt;
 &lt;p&gt;মাসখানেক ওয়ার্ডপ্রেস ব্যবহার করে একরকম বাধ্য হয়েই স্ট্যাটিক সাইটে মুভ করলাম। ওয়ার্ডপ্রেস ছাড়ার মূল কারন হলো - সার্ভার খরচ এবং সার্ভার ডাউন সমস্যা, ওয়ার্ডপ্রেসের ধীরগতি, SSL সার্টিফিকেট প্রবলেম ইত্যাদি। শিক্ষানবিশ হিসেবে আমার জন্য সার্ভার ও SSL সার্টিফিকেটের খরচ বহন করা সত্যিই কঠিন। আর ফ্রি হোস্টিং এর ব্যপার বোধহয় সবারই জানা। প্রথমে জেকিল ব্যবহার করে সাইট বানাব ভেবেছিলাম কিন্তু কোন অদ্ভুত কারনে জেকিল আমার পিসিতে ইন্সটলই করতে পারলাম না। শেষ পর্যন্ত হুগো ব্যবহারের সিদ্ধান্ত নিলাম। আর প্রথমবার হুগো সাইট ব্রাউজারে দেখে আমার অনুভূতি ছিল - &amp;ldquo;আরেহ্!! এটাই তো চাচ্ছিলাম।&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব</title>
-      <link>https://suvashsumon.github.io/post/jar-to-exe-2/</link>
+      <link>http://localhost:1313/post/jar-to-exe-2/</link>
       <pubDate>Thu, 23 Jul 2020 21:06:32 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/jar-to-exe-2/</guid>
-      <description>&lt;p&gt;আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই &lt;a href=&#34;https://suvashsumon.github.io/post/jar-to-exe-1/&#34;&gt;লিঙ্ক&lt;/a&gt; থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/jar-to-exe-2/</guid>
+      <description>&lt;p&gt;আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই &lt;a href=&#34;http://localhost:1313/post/jar-to-exe-1/&#34;&gt;লিঙ্ক&lt;/a&gt; থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।&lt;/p&gt;</description>
     </item>
     <item>
       <title>JAR ফাইলকে EXE তে রুপান্তর - প্রথম পর্ব</title>
-      <link>https://suvashsumon.github.io/post/jar-to-exe-1/</link>
+      <link>http://localhost:1313/post/jar-to-exe-1/</link>
       <pubDate>Thu, 23 Jul 2020 20:39:31 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/jar-to-exe-1/</guid>
+      <guid>http://localhost:1313/post/jar-to-exe-1/</guid>
       <description>&lt;p&gt;বেশ কিছুদিন আগে জাভা দিয়ে একটা ছোট্ট অ্যাপ্লিকেশন তৈরি করেছিলাম। কম্পিটিটিভ প্রোগ্রামিং এ হেল্পফুল একটা সফটওয়্যার। অনেকগুলো টিউটোরিয়াল দেখে exe ও বানিয়েছিলাম। আমার পিসিতে (যেটাতে আমি সফটওয়্যারটি ডেভেলপ করেছিলাম)  ভালভাবে চললেও, অন্য পিসিতে jre not found problem দেখাচ্ছিল। অনেক চেষ্টা করেও সমস্যাটার সমাধান পাচ্ছিলাম না। আমি চাচ্ছিলাম যেন ইউজারকে jre ইন্সটল করতে না হয়।  বান্ডল jre সিস্টেম ব্যাবহার করার চেষ্টা করেও সেবার ব্যর্থ হই। অল্প কিছুদিন আগে এই সমস্যা সমাধান করতে পেরেছি। আসলে আমার ফলো করা টিউটোরিয়ালগুলো ডিটেইলস ছিল না। আমার মনে হয় ডিটেইলস টিউটোরিয়াল ইন্টারনেটে নেই বললেই চলে। একারনেই নতুনদের আমার মত সমস্যায় পড়তে হয়। আমার এই লিখাটি সেইসব নতুনদের জন্য।&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cmder : একটি অসাধারণ টার্মিনাল ইমুলেটর</title>
-      <link>https://suvashsumon.github.io/post/cmder-the-best-terminal-ever/</link>
+      <link>http://localhost:1313/post/cmder-the-best-terminal-ever/</link>
       <pubDate>Thu, 23 Jul 2020 11:08:13 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/cmder-the-best-terminal-ever/</guid>
+      <guid>http://localhost:1313/post/cmder-the-best-terminal-ever/</guid>
       <description>&lt;p&gt;উইন্ডোজ অপারেটিং সিস্টেম ব্যবহার করেন কিন্তু টার্মিনালের খুব প্রয়োজন পড়ে? Powershell বা dufault cmd পছন্দ হয় না? Linux এর মত টার্মিনাল চান? তাহলে লেখাটি আপনার জন্য। Cmder হল টার্মিনালের/কমান্ড প্রম্পটের একটি ইমুলেশন যা উইন্ডোজ ও ইউনিক্স উভয় কমান্ড বুঝতে পারে। একই সাথে দেয় অসাধারণ সুন্দর ইউজার ইন্টারফেস। নিচের ছবিটি দেখুন –&lt;/p&gt;</description>
     </item>
     <item>
       <title>পাইথন দিয়ে CSV হ্যান্ডেলিং</title>
-      <link>https://suvashsumon.github.io/post/csv-handelling-using-python/</link>
+      <link>http://localhost:1313/post/csv-handelling-using-python/</link>
       <pubDate>Thu, 23 Jul 2020 10:54:55 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/csv-handelling-using-python/</guid>
+      <guid>http://localhost:1313/post/csv-handelling-using-python/</guid>
       <description>&lt;p&gt;প্রোগ্রামিং লাংগুয়েজ দিয়ে ডাটাবেজ হ্যান্ডল করা একটা অতি সাধারণ ব্যাপার। তবে এম এস এক্সেল শিট হ্যান্ডল করা খুব বেশি পরিচিত নয়। এই ব্লগটিতে আমি চেষ্টা করব পাইথন দিয়ে এম এস এক্সেল শিট হ্যান্ডল করার কৌশল আলোচনা করতে। হয়তো আপনার কখনও দরকার পড়বে না, অথবা পড়বে। যদি আপনি ব্লগটি শেষ পর্যন্ত পড়তে চান তো স্বাগতম। চলুন শুরু করা যাক।&lt;/p&gt;</description>
     </item>
   </channel>

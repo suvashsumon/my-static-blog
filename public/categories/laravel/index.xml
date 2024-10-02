@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Laravel on Suvash Kumar</title>
-    <link>https://suvashsumon.github.io/categories/laravel/</link>
+    <link>http://localhost:1313/categories/laravel/</link>
     <description>Recent content in Laravel on Suvash Kumar</description>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Jul 2021 22:28:51 +0600</lastBuildDate>
-    <atom:link href="https://suvashsumon.github.io/categories/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install XAMPP, Composer on Ubuntu 20.04 LTS or Newer</title>
-      <link>https://suvashsumon.github.io/post/install-xampp-composer-on-ubuntu/</link>
+      <link>http://localhost:1313/post/install-xampp-composer-on-ubuntu/</link>
       <pubDate>Wed, 28 Jul 2021 22:28:51 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/install-xampp-composer-on-ubuntu/</guid>
+      <guid>http://localhost:1313/post/install-xampp-composer-on-ubuntu/</guid>
       <description>&lt;p&gt;XAMPP is a complete package of Apache, MariaDB(MySql), PHP and Perl. XAMPP is completely free software and widely used on Windows platforms for web development and database management. Its easy to install XAMPP on a Windows operating system but complicated to install on a Linux machine. In this article, I am trying to show how to install XAMPP on Ubuntu 20.0.4LTS+.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য | Suvash Kumar</title>
 <meta name="keywords" content="HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য">
 <meta name="description" content="আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত HUGO ব্যবহার করে ব্লগসাইট তৈরি এবং HUGO সাইট নেটলিফাই এ পাবলিশ করা লেখা দুইটি পড়ে আসতে পারেন।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">
+<link rel="canonical" href="http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,71 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য" />
-<meta property="og:description" content="আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত HUGO ব্যবহার করে ব্লগসাইট তৈরি এবং HUGO সাইট নেটলিফাই এ পাবলিশ করা লেখা দুইটি পড়ে আসতে পারেন।" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-09-27T13:24:21+06:00" />
-<meta property="article:modified_time" content="2020-09-27T13:24:21+06:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য"/>
-<meta name="twitter:description" content="আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট  অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত HUGO ব্যবহার করে ব্লগসাইট তৈরি এবং HUGO সাইট নেটলিফাই এ পাবলিশ করা লেখা দুইটি পড়ে আসতে পারেন।"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://suvashsumon.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য",
-      "item": "https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য",
-  "name": "HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য",
-  "description": "আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত HUGO ব্যবহার করে ব্লগসাইট তৈরি এবং HUGO সাইট নেটলিফাই এ পাবলিশ করা লেখা দুইটি পড়ে আসতে পারেন।\n",
-  "keywords": [
-    "HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য"
-  ],
-  "articleBody": "আমার আগের দুই আর্টিকেলে আমি HUGO দিয়ে ব্লগ সাইট তৈরি এবং সেটি Netlify এ পাবলিশ করার কৌশল নিয়ে আলোচনা করেছি। এই লেখাটিতে Hugo এর ডিরেক্টরি স্ট্রাকচার ও কন্টেন্ট ম্যানেজমেন্ট নিয়ে আলোচনা করার চেষ্টা করব। যেহেতু HUGO সাইট তৈরি সাধারণ সাইট তৈরির মত নয়, তাই এর ফাইল সিস্টেম ও কন্টেন্ট ম্যানেজমেন্ট অনেকটাই আলাদা। এই লেখাটি পড়ার আগে HUGO সম্পর্কে বেসিক ধারণা রাখা জরুরি। আমার আগের প্রকাশিত HUGO ব্যবহার করে ব্লগসাইট তৈরি এবং HUGO সাইট নেটলিফাই এ পাবলিশ করা লেখা দুইটি পড়ে আসতে পারেন।\nডিরেক্টরি স্ট্রাকচার আমরা যখন hugo new site site-name কমান্ড দিয়ে সাইট তৈরি করি তখন হুগো site-name নামে একটা ফোল্ডার তৈরি করে তার ভেতরে বাই ডিফল্ট কিছু ফোল্ডার/ফাইল তৈরি করে দেয়। তখন site-name ফোল্ডারটি হয় নিচের মত -\nআসুন এই ফোল্ডারগুলো ও config.toml ফাইলটির সম্পর্কে আলোচনা করি।\narchtypes এই ফোল্ডারটিতে পোষ্টের টেম্পলেট সেভ করে রাখা হয়। প্রত্যেকটি নতুন পোষ্টে title, date, author, tags, categories ইত্যাদি ফ্রন্ট ম্যাটার অ্যাড করতে হয়। archtypes ফোল্ডারটির মধ্য dufault.md নামের ফাইলে এই টেম্পলেট তৈরি করে রাখতে হয়। যখন hugo new post-name.md কমান্ড রান করে নতুন পোস্ট তৈরি করা হয় তখন সেই টেম্পলেটটি post-name.md ফাইলে কপি হয়ে যায়। HUGO সাইট তৈরির সময় বাই-ডিফল্ট একটি টেম্পলেট তৈরি করাই থাকে। চাইলে সেটি এডিট করা সম্ভব।\nassets এটি বাই-ডিফল্ট করা থাকে না। যেসকল ফাইল HUGO pipes দ্বারা প্রসেস করতে হবে সেগুলো এই ফোল্ডারটি তৈরি করে তার মধ্য রাখতে হয়। যেসকল ফাইলের .Permalink এবং .RelPermalink সাইটে ব্যবহৃত হয়েছে শুধুমাত্র সেই ফাইলগুলোই public ফোল্ডারে পাবলিশ হবে।\ncontent এই ফোল্ডারের মধ্য ব্লগ পোস্ট গুলো রাখা হয়। পোস্টগুলো মেইন পেজে দেখাতে চাইলে post নামে ফোল্ডার তৈরি করে তার ভেতরে রাখতে হয়। post ফোল্ডারের মধ্য চাইলে আরও ফোল্ডার তৈরি করা সম্ভব। যেমন ধরুন আমি হুগো নিয়ে তিনটি পোস্ট লিখলাম। এবার আমি চাইলে পোস্ট তিনটি post ফোল্ডারের মধ্যে hugo-posts নামে একটা ফোল্ডার তৈরি করে তার মধ্যে রাখাতে পারি। এই content ফোল্ডারের মধ্য পোস্ট ছাড়াও স্ট্যাটিক পেজের মার্কডাউন ফাইল রাখা হয়।\ndata হুগোতে ডেটা ম্যানেজমেন্টের জন্য তিনটি ফরম্যাট ব্যবহার করা হয় - TOML, JSON এবং YML। ধরা যাক আপনাকে সাইটের কোন স্থানে ১০০ জন বাক্তির তথ্য ব্যবহার করতে হবে। ১০০ জন বাক্তির জন্য আলাদা আলাদা লাইন কোড না করে তাদের তথ্য TOML, JSON বা YML ফরম্যাটে data ফোল্ডারের মধ্য সেভ করে.Site.Data.datafilename এর মাধ্যমে অ্যাকসেস করা যায়। এক্ষেত্রে ডাটা ফাইলের নাম হবে datafilename.json, datafilename.yml বা datafilename.toml।\nlayouts থিমের সাথে যুক্ত নয় এমন কোন লেআউট ফাইল এই ফোল্ডারে রাখতে হয়। ধরুন আপনি পোর্টফলিও পেজ তৈরি করতে চান। তাহলে layouts ফোল্ডারে পোর্টফলিও-এর লেআউট রাখতে হবে।\npublic এই ফোল্ডারও বাই ডিফল্ট তৈরি হয় না। কিন্তু যখন hugo কমান্ড রান করে সাইট বিল্ড করা হয় তখন হুগো এই ফোল্ডারটি তৈরি করে। সাইট বিল্ড করলে হুগো মার্কডাউন, লেআউট ও স্ট্যাটিক ফাইল গুলো নিয়ে মূল সাইট তৈরি করে এই ফোল্ডারে রাখে। মোটকথা হল, public ফোল্ডারের ভেতরের কন্টেন্টগুলোই cpanel বা কোন সার্ভারে রাখতে হয়।\nstatic এই ফোল্ডারে css, javascript, images, documents, pdf ইত্যাদি স্ট্যাটিক ফাইল রাখা হয়। শুধুমাত্র সাইট ডিজাইনে ব্যবহৃত ইমেজগুলো এই ফোল্ডারে রাখা উচিত, পোস্টে ব্যবহৃত ইমেজ রাখা উচিত নয়। পোষ্টে ব্যবহৃত ইমেজগুলো content ফোল্ডারে রাখা শ্রেয়।\nconfig.toml মূলত সাইটের যাবতীয় সেটিংস এই ফাইলে থাকে। সাধারণত baseURL, languageCode, title, author, license ইত্যাদি এই ফাইলে উল্লেখ করা হয়।\nকন্টেন্ট ম্যানেজমেন্ট পেজ তৈরি পেজ তৈরির আগে যে থিম ব্যবহার করছেন তার ভেতরের exampleSite/config.toml ফাইলে চোখ বুলিয়ে নেয়া উচিত। এতে ওই থিমে কিভাবে পেজ তৈরি করতে হবে তা জানা যায়। সাধারণ পেজ তৈরির জন্য content ফোল্ডারে page নামে ফোল্ডার তৈরি করে তার মধ্য মার্কডাউন ফরম্যাটে পেজ তৈরি করতে হয়। যদি আমার about me পেজ তৈরি করতে হয় তবে আমি নিচের মত করে তৈরি করব -\ncontent - page - about-me.md টাক্সোনমি হুগোতে পোস্টের শ্রেণিবিন্যাসের জন্য বাই ডিফল্ট দুটি উপায় আছে - categories ও tags। এগুলো পোস্টের ফ্রন্ট ম্যাটার হিসেবে লিখতে হয়। যেমন -\ntags = [\"হুগো নিয়ে লেখা\", \"ব্লগ সাইট তৈরি\"] categories = [\"হুগো\", \"হুগো বাংলা\", \"ব্লগ সাইট\"] এখন যদি ইউজার “হুগো নিয়ে লেখা” ট্যাগযুক্ত সব পোস্টের লিস্ট পেতে চান তবে তিনি www.sitedomain.com/tags/হুগো-নিয়ে-লেখা/ লিঙ্কে পাবেন। একই ভাবে যদি “হুগো” ক্যাটেগরির সব পোস্ট পেতে চান তবে www.sitedomain.com/tags/হুগো/ তে পাবেন।\nচাইলে নিজের মত করে টাক্সোনমি তৈরি করা যায়। যেমন আমি যদি location ও level নামে দুটি টাক্সোনমি তৈরি করতে চাই তবে আমাকে config.toml ফাইলে নিচের অংশটুকু যুক্ত করতে হবে।\n[taxonomies] tag = \"tags\" category = \"categories\" location = \"locations\" level = \"levels\" অর্থাৎ টাক্সোনমি যুক্ত করার নিয়ম হল, সিঙ্গুলার ফর্ম = “প্লুরাল ফর্ম”। লক্ষ করুন tags ও categories ডিফল্ট হওয়া সত্ত্বেও সেটি যুক্ত করতে হয়েছে। সেটি করা না হলে অন্যগুলো কাজ করবে না। এখন যদি পোস্টে location অ্যাড করতে চাই তবে নিচের মত করে ফ্রন্ট ম্যাটার লিখতে হবে -\nlocations = [\"locaton-name1\", \"location-name2\"] সিঙ্গেল পেজ ও লিস্ট পেজ থিমের layouts ফোল্ডার খুঁজলে দুটি এইচটিএমএল ফাইল দেখবেন - single.html, list.html। single.html লেআউট ব্যবহার করা হয় মূল পোস্ট পেজ তৈরি জন্য আর list.html ব্যবহার করা হয় কোন টাক্সোনমির অধীনে থাকা পোস্টগুলোর লিস্ট দেখানোর জন্য।\nউপসংহার একটা ব্রান্ড নিউ হুগো সাইট তৈরির জন্য যা যা লাগে তার প্রায় সবকিছুই আলোচনা করার চেষ্টা করেছি। আসলে এটা শুরু মাত্র। সুন্দর একটা সাইট তৈরি ও ম্যানেজমেন্টের জন্য কন্টেন্ট ম্যানেজমেন্ট সিস্টেম সম্পর্কে গভীর ভাবে জানা প্রয়োজন। সাধারণত অফিশিয়াল ডকুমেন্টেশন সবচাইতে বড় সহায়ক ভূমিকা পালন করে। হুগো এই জায়গায় আরও এগিয়ে। হুগোর সুন্দর ও সাজানো গোছানো অফিশিয়াল ডকুমেন্টেশনটি পাওয়া যাবে এই লিংকে https://gohugo.io/documentation/।\nহ্যাপি ব্লগিং!!\n",
-  "wordCount" : "841",
-  "inLanguage": "en",
-  "datePublished": "2020-09-27T13:24:21+06:00",
-  "dateModified": "2020-09-27T13:24:21+06:00",
-  "author":{
-    "@type": "Person",
-    "name": "Suvash Kumar"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://suvashsumon.github.io/post/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Suvash Kumar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suvashsumon.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -137,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -163,17 +99,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://suvashsumon.github.io/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
+                <a href="http://localhost:1313/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -245,14 +181,14 @@ categories = [&#34;হুগো&#34;, &#34;হুগো বাংলা&#34;, &#
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://suvashsumon.github.io/tags/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য</a></li>
+      <li><a href="http://localhost:1313/tags/hugo--%E0%A6%A1%E0%A6%BF%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%93-%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF/">HUGO : ডিরেক্টরি স্ট্রাকচার, কন্টেন্ট ম্যানেজমেন্ট ও অন্যান্য</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

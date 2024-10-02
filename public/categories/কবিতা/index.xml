@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>কবিতা on Suvash Kumar</title>
-    <link>https://suvashsumon.github.io/categories/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE/</link>
+    <link>http://localhost:1313/categories/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE/</link>
     <description>Recent content in কবিতা on Suvash Kumar</description>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Nov 2020 19:21:54 +0600</lastBuildDate>
-    <atom:link href="https://suvashsumon.github.io/categories/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>এ আমার কোন দুঃস্বপ্ন নয়</title>
-      <link>https://suvashsumon.github.io/post/a-amar-kono-dussopno-noy/</link>
+      <link>http://localhost:1313/post/a-amar-kono-dussopno-noy/</link>
       <pubDate>Wed, 11 Nov 2020 19:21:54 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/a-amar-kono-dussopno-noy/</guid>
+      <guid>http://localhost:1313/post/a-amar-kono-dussopno-noy/</guid>
       <description>&lt;p&gt;চকিতে ফেরানো মুখ,&lt;br&gt;
 মেঘকালো চুলে ঢেকে থাকা&lt;br&gt;
 তোমার ললাটে যদি এঁকে দিতে পারি&lt;br&gt;
@@ -23,17 +23,17 @@
     </item>
     <item>
       <title>আমার একটা অনুপ্রেরণা চাই</title>
-      <link>https://suvashsumon.github.io/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</link>
+      <link>http://localhost:1313/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</link>
       <pubDate>Tue, 06 Oct 2020 18:30:34 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</guid>
+      <guid>http://localhost:1313/post/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%A3%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87/</guid>
       <description>&lt;p&gt;আমার অনুপ্রেরণা চাই। হুম,&lt;br&gt;
 ওইটাই - তোমরা যাকে মোটিভেশন বলো।&lt;/p&gt;</description>
     </item>
     <item>
       <title>কবিতা - ১</title>
-      <link>https://suvashsumon.github.io/post/kobita-1/</link>
+      <link>http://localhost:1313/post/kobita-1/</link>
       <pubDate>Wed, 09 Sep 2020 23:30:03 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/kobita-1/</guid>
+      <guid>http://localhost:1313/post/kobita-1/</guid>
       <description>&lt;p&gt;কাজলকালো চোখের নিচে জোৎস্নাকালো দাগ,&lt;br&gt;
 ফুলো নাকে জমিয়ে রাখা রাগ,&lt;br&gt;
 তোমার সকল কষ্ট - যাও ভুলে,&lt;br&gt;

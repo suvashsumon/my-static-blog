@@ -11,6 +11,19 @@
 First log in to mysql:
 
 mysql -u root -p
+
+Create new user
+
+CREATE USER &#39;ameenruhul&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;ac?Z6&amp;7XvT#hyE6w&#39;;
+
+Grant Privilages
+
+GRANT * ON database_name.table_name TO &#39;username&#39;@&#39;localhost&#39;;
+GRANT ALL PRIVILEGES ON blog.* TO &#39;ameenruhul&#39;@&#39;localhost&#39;;
+
+Now last step
+
+FLUSH PRIVILEGES;
 ">
 <meta name="author" content="Suvash Kumar">
 <link rel="canonical" href="http://localhost:1313/post/creating-new-database-user-and-grant-permissions/">

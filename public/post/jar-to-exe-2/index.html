@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই লিঙ্ক থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="https://suvashsumon.github.io/post/jar-to-exe-2/">
+<link rel="canonical" href="http://localhost:1313/post/jar-to-exe-2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/jar-to-exe-2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/jar-to-exe-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,71 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব" />
-<meta property="og:description" content="আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই লিঙ্ক থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://suvashsumon.github.io/post/jar-to-exe-2/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-07-23T21:06:32+06:00" />
-<meta property="article:modified_time" content="2020-07-23T21:06:32+06:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব"/>
-<meta name="twitter:description" content="আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই লিঙ্ক থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://suvashsumon.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব",
-      "item": "https://suvashsumon.github.io/post/jar-to-exe-2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব",
-  "name": "JAR ফাইলকে EXE তে রুপান্তর - দ্বিতীয় পর্ব",
-  "description": "আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই লিঙ্ক থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "আগের পর্বে আমরা আমাদের jar ফাইলকে বান্ডল jre দিয়ে রি-কম্পাইল করেছিলাম। লেখাটি পড়তে পারেন এই লিঙ্ক থেকে। এই পর্বে রি-কম্পাইল করা ফাইলটির সেটআপ ফাইল বা ইন্সটলার তৈরি করবো।\nইন্সটলার তৈরি এখন পর্যন্ত আমরা যা করেছি সেটিই ব্যবহারকারীকে দিতে পারি। তবে সেক্ষেত্রে ব্যবহারকারীকে পুরো Project ফোল্ডার দিতে হবে। সেটি হবে একটি অগোছালো কাজ। আমাদের উদ্দেশ্য ব্যবহারকারীকে যেন কোন ঝামেলা পোহাতে না হয়। এজন্য আমাদের পুরো Project ফোল্ডারকে সেটআপ ফাইলে কমপ্রেস করে দেওয়া, যাতে ইন্সটলেশনের সময় অটোমেটিক্যালি সবকিছু কাজের উপযোগী হয়ে যায়। আশা করি inno setup compiler ইন্সটল করতে পেরেছেন। inno setup compiler ওপেন করে নিচের ছবিগুলো অনুসরণ করে যান।\nএখনে ভার্সন, কোম্পানির নাম, অ্যাপ্লিকেশান সাইট ফিল্ডগুলো পূরণ না করলেও চলে।\nআপনার অ্যাপ্লিকেশনের বেজ ফোল্ডারের নাম ইউনিক না হলে সমস্যা তৈরি হবে।\nএখানে আমার application.exe ফাইলের পাথ হয়েছে C:\\Users\\USER\\Desktop\\Project\\application.exe । খেয়াল করে দেখুন আমি আমার Project ফোল্ডারের পাথ সিলেক্ট করে দিয়েছি C:\\Users\\USER\\Desktop\\Project* এইভাবে। এখানে * চিহ্নের অর্থ Project ফোল্ডারের মধ্য অবস্থিত সব ফাইল এবং ফোল্ডার ৪ নং ছবিতে তৈরি করা Application folder এ কপি হবে।\nআপনি আপনার কম্পিউটারে যেকোনো স্থানে সেটআপ ফাইল সেভ করতে পারেন। মূলত এই ফাইলটিই আমরা ইউজারকে দিব।\nআমাদের সেটআপ ফাইল তৈরি। এটি এবার ইন্সটল করা যাবে ঠিক অন্যান্য অ্যাপ্লিকেশানের মত। তবে হয়তো অন্য কারো পিসিতে একটা ওয়ার্নিং মেসেজ দিতে পারে। এটা মুলত দেয় যখন application টির সোর্স সম্পর্কে অপারেটিং সিস্টেমের কোন ধারনা থাকে না। যেহেতু আমাদের অ্যাপ্লিকেশানটি কোন ভাইরাস নয় তাই ওয়ার্নিং মেসেজটি ইগ্নোর করলেই হল।\n",
-  "wordCount" : "228",
-  "inLanguage": "en",
-  "datePublished": "2020-07-23T21:06:32+06:00",
-  "dateModified": "2020-07-23T21:06:32+06:00",
-  "author":{
-    "@type": "Person",
-    "name": "Suvash Kumar"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://suvashsumon.github.io/post/jar-to-exe-2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Suvash Kumar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suvashsumon.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -137,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -163,17 +99,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://suvashsumon.github.io/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
+                <a href="http://localhost:1313/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -242,7 +178,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

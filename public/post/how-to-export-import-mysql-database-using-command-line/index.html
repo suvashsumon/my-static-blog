@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/">
+<link rel="canonical" href="http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,71 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা" />
-<meta property="og:description" content="আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-17T11:39:02+06:00" />
-<meta property="article:modified_time" content="2021-07-17T11:39:02+06:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা"/>
-<meta name="twitter:description" content="আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://suvashsumon.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা",
-      "item": "https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা",
-  "name": "কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট\/ইম্পোর্ট করা",
-  "description": "আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।\nপ্রথমেই ssh কী ব্যবহার করে সার্ভারে লগইন করুন।\nssh user_name@server_ip_address A. এক্সপোর্ট ধাপ-১ঃ নির্দিষ্ট পাথে প্রবেশ করুন লগইন করার পর আপনি রুট ডিরেক্টরিতে থাকবেন। এক্সপোর্ট করা ফাইলটি যেখানে সেভ করতে চান সেই ফোল্ডারে যেতে নিচের কমান্ড রান করুন।\ncd folder_path আমি যেহেতু /home ফোল্ডারে এক্সপোর্ট করা ফাইলটি সেভ করব আমার কমান্ড হবে -\ncd /home ধাপ-২ঃ এক্সপোর্ট করা ধরা যাক, আপনার amar_db নামে একটা ডাটাবেজ আছে এবং সেটিই এক্সপোর্ট করতে চান। তাহলে নিচের মত কমান্ড রান করুন।\nmysqldump -u username -p amar_db \u003e exported_database.sql এইখানে\nusername হল আপনার ইউজারনেম। এই ক্ষেত্রে রুট ইউজার হওয়া উচিত। amar_db হল ডাটাবেজের নাম। exported_database.sql হল আপনি যেই নামে এক্সপোর্ট করা ফাইলটি সেভ করতে চান। নামের শেষে অবশ্যই .sql থাকতে হবে। কমান্ড চালানোর পর পাসওয়ার্ড চাইলে পাসওয়ার্ড দিন। এক্সপোর্ট করা ফাইলটি প্রেজেন্ট ওয়ার্কিং ডিরেক্টরিতে সেভ হয়ে যাবে। B. ইম্পোর্ট ধাপ-১ঃ MySql লগইন প্রথেমই একটা ডাটাবেজ তৈরি করতে হবে। সেজন্য MySql এ লগইন করা দরকার। নিচের কমান্ড রান করে লগইন করতে পারবেন।\nmysql -u root -p পাসওয়ার্ড দেওয়ার পর MySql শেল ওপেন হবে।\nধাপ-২ঃ ডাটাবেজ তৈরি ডাটাবেজ তৈরির জন্য MySql শেলে নিচের কমান্ড রান করুন।\nCREATE DATABASE new_db; এখানে new_db হল ডাটাবেজ নেম। আপনার পছন্দমত যেকোনো নামে ডাটাবেজ তৈরি করতে পারবেন।\nধাপ-৩ঃ MySql লগ আউট MySql শেলে আমাদের কাজ শেষ হয়েছে। exit কমান্ড দিয়ে লগ আউট করুন।\nধাপ-৪ঃ ফোল্ডারে প্রবেশ করা প্রথমেই আপনাকে আপনার sql ফাইলটি যেই ফোল্ডারে আছে সেখানে প্রবেশ করতে হবে। সেজন্য নিচের মত কমান্ড রান করুন।\ncd folder_path ধাপ-৫ঃ ইম্পোর্ট করা এইবার sql ফাইলটি new_db ডাটাবেজে ইম্পোর্ট করার জন্য নিচের কমান্ড চালান।\nmysql -u username -p new_db \u003c datafile.sql username হল ইউজার নেম। new_db হল ডাটাবেজ নেম। datafile.sql হল sql ফাইল যা ডাটাবেজে ইম্পোর্ট করতে হবে। এই ক্ষেত্রেও পাসওয়ার্ড চাইতে পারে। পাসওয়ার্ড দিয়ে ইন্টার চাপুন। ব্যাস! কাজ শেষ।\n",
-  "wordCount" : "303",
-  "inLanguage": "en",
-  "datePublished": "2021-07-17T11:39:02+06:00",
-  "dateModified": "2021-07-17T11:39:02+06:00",
-  "author":{
-    "@type": "Person",
-    "name": "Suvash Kumar"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Suvash Kumar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suvashsumon.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -137,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -163,17 +99,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://suvashsumon.github.io/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
+                <a href="http://localhost:1313/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -246,7 +182,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by

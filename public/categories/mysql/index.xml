@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MySql on Suvash Kumar</title>
-    <link>https://suvashsumon.github.io/categories/mysql/</link>
+    <link>http://localhost:1313/categories/mysql/</link>
     <description>Recent content in MySql on Suvash Kumar</description>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jul 2021 11:39:02 +0600</lastBuildDate>
-    <atom:link href="https://suvashsumon.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>কমান্ড লাইনের মাধ্যমে MySql ডাটাবেজ এক্সপোর্ট/ইম্পোর্ট করা</title>
-      <link>https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/</link>
+      <link>http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/</link>
       <pubDate>Sat, 17 Jul 2021 11:39:02 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/how-to-export-import-mysql-database-using-command-line/</guid>
+      <guid>http://localhost:1313/post/how-to-export-import-mysql-database-using-command-line/</guid>
       <description>&lt;p&gt;আমি এই লেখায় সার্ভারে অবস্থিত ডাটাবেজকে export/import করে দেখাবো। একই পদ্ধতি পিসির লোকাল apache/nginx সার্ভারেও অনুসরণ করা যাবে।&lt;/p&gt;</description>
     </item>
   </channel>

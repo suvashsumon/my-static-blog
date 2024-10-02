@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Terminal Emulator on Suvash Kumar</title>
-    <link>https://suvashsumon.github.io/categories/terminal-emulator/</link>
+    <link>http://localhost:1313/categories/terminal-emulator/</link>
     <description>Recent content in Terminal Emulator on Suvash Kumar</description>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2020 11:08:13 +0600</lastBuildDate>
-    <atom:link href="https://suvashsumon.github.io/categories/terminal-emulator/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/terminal-emulator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cmder : একটি অসাধারণ টার্মিনাল ইমুলেটর</title>
-      <link>https://suvashsumon.github.io/post/cmder-the-best-terminal-ever/</link>
+      <link>http://localhost:1313/post/cmder-the-best-terminal-ever/</link>
       <pubDate>Thu, 23 Jul 2020 11:08:13 +0600</pubDate>
-      <guid>https://suvashsumon.github.io/post/cmder-the-best-terminal-ever/</guid>
+      <guid>http://localhost:1313/post/cmder-the-best-terminal-ever/</guid>
       <description>&lt;p&gt;উইন্ডোজ অপারেটিং সিস্টেম ব্যবহার করেন কিন্তু টার্মিনালের খুব প্রয়োজন পড়ে? Powershell বা dufault cmd পছন্দ হয় না? Linux এর মত টার্মিনাল চান? তাহলে লেখাটি আপনার জন্য। Cmder হল টার্মিনালের/কমান্ড প্রম্পটের একটি ইমুলেশন যা উইন্ডোজ ও ইউনিক্স উভয় কমান্ড বুঝতে পারে। একই সাথে দেয় অসাধারণ সুন্দর ইউজার ইন্টারফেস। নিচের ছবিটি দেখুন –&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা | Suvash Kumar</title>
 <meta name="keywords" content="">
 <meta name="description" content="অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।">
 <meta name="author" content="Suvash Kumar">
-<link rel="canonical" href="https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/">
+<link rel="canonical" href="http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://suvashsumon.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://suvashsumon.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://suvashsumon.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://suvashsumon.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://suvashsumon.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/how-to-host-multiple-site-in-apache-server/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,71 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা" />
-<meta property="og:description" content="অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-05T19:47:43+06:00" />
-<meta property="article:modified_time" content="2021-07-05T19:47:43+06:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা"/>
-<meta name="twitter:description" content="অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://suvashsumon.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা",
-      "item": "https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা",
-  "name": "একই অ্যাপাচি সার্ভারে (উবুন্টু) একাধিক সাইট হোস্ট করা",
-  "description": "অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "অ্যাপাচি সার্ভারে চাইলেই একই সাথে অনেকগুলো ওয়েবসাইট হোস্ট করা যায়। এতে খরচ যেমন কমে তেমনি একাধিক সার্ভার কনফিগারেশন করার ঝামেলায় যেতে হয় না। এই ফিচারটি ভার্চুয়াল হোস্ট নামে পরিচিত।\nভার্চুয়াল হোস্ট ব্যবহার করার জন্য আমাদের যা যা লাগবে -\nউবুন্টু ভিপিএস অ্যাপাচি ওয়েব সার্ভার LAMP Stack ইন্সটল করা থাকতে হবে ssh ব্যবহার করে সার্ভারে লগইন থাকতে হবে ধরা যাক, আমরা একই সাথে দুটি ওয়েবসাইট example.com এবং example.org হোস্ট করব। প্রথমেই আমাদের ডোমেইন প্রভাইডার সাইটে গিয়ে দুটি ডোমেইনেরই A-Record হিসেবে আমাদের ভিপিএস-টির আইপি এড্রেস সেট করে আসতে হবে। তারপর নিচের ধাপগুলো অনুসরণ করুন।\nধাপ-১ঃ বেজ ফোল্ডার তৈরি প্রথমেই দুটি সাইটের জন্য দুটি ফোল্ডার তৈরি করা যাক। ফোল্ডার দুটি অবশ্যই /var/www ফোল্ডারের ভেতর রাখতে হবে। নিচের মত করে দুটি ফোল্ডার তৈরি করতে পারেন।\nsudo mkdir -p /var/www/example.com/public_html sudo mkdir -p /var/www/example.org/public_html ধাপ-২ঃ ওনারশিপ পরিবর্তন এখন ফোল্ডার দুটির ওনারশিপ শুধুমাত্র রুট ইউজারের। সেটা পরিবর্তন করে কারেন্ট ইউজারকে দিতে চাইলে নিচের কমান্ড রান করুন -\nsudo chown -R $USER:$USER /var/www/example.com/public_html sudo chown -R $USER:$USER /var/www/example.org/public_html ধাপ-৩ঃ পারমিশন চেঞ্জ করা আপনার ওয়েবসাইট ঠিকমত সার্ভ করতে /var/www ফোল্ডারের পারমিশান চেঞ্জ করা দরকার। সেজন্য নিচের কমান্ড রান করুন -\nsudo chmod -R 755 /var/www ধাপ-৪ঃ স্যাম্পল ফাইল তৈরি এই ধাপে আমরা ন্যানো এডিটর ব্যবহার করে সাইট দুটির জন্য index.html ফাইল বানাতে পারি। এইধাপটি বাধ্যতামূলক নয়। তবে সাইট ঠিকমত কাজ করছে কিনা যাচাই করার জন্য সহায়ক। example.com সাইটের জন্য নিচের কমান্ড রান করুন -\nsudo nano /var/www/example.com/public_html/index.html এবার এডিটরে স্যাম্পল কোড লিখুন। যেমন -\n\u003chtml\u003e \u003cbody\u003e This is our example.com website \u003c/body\u003e \u003c/html\u003e একইভাবে অপর সাইটের জন্যও ফাইল বানাতে পারেন।\nsudo nano /var/www/example.org/public_html/index.html এবার এডিটরে স্যাম্পল কোড লিখুন। যেমন -\n\u003chtml\u003e \u003cbody\u003e This is our example.org website \u003c/body\u003e \u003c/html\u003e ধাপ-৫ঃ কনফিগারেশন ফাইল তৈরি অ্যাপাচি ইন্সটলের সময় আমাদের উবুন্টুতে ডিফল্ট কনফিগারেশন ফাইল তৈরি হয়ে যায়। যেটা /etc/apache2/sites-available/000-default.conf নামে থাকে। আমারা এবার আমাদের দুটি সাইটের জন্য 000-default.conf কপি করে একই লোকেশনে দুটি আলাদা কনফিগারেশন ফাইল তৈরি করব।\nsudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.com.conf sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.org.conf এইবার ফাইল দুটি ন্যানো এডিটরে ওপেন করে এডিট করতে হবে।\nexample.com সাইটের জন্য নিচের কমান্ড রান করুন -\nnano /etc/apache2/sites-available/example.com.conf ন্যানো এডিটর ওপেন হলে নিচের মত করে এডিট করুন -\nServerAdmin webmaster@example.com ServerName example.com ServerAlias www.example.com DocumentRoot /var/www/example.com/public_html ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined এখানে ServerAdmin হল সার্ভারের এডমিন যা এডিট না করাই ভাল। ServerName হল ডোমাইন নেম। ServerAlias হিসেবে ডোমেইন নেমটি সহকারে দিতে হবে যাতে এবং উভয় ভাবেই সাইটটি অ্যাক্সেস করা যায়। DocumentRoot হিসেবে সাইটটির বেস ফোল্ডারের পাথ দিতে হবে। আমার ক্ষেত্রে সেটি হল /var/www/example.com/public_html অনুরূপভাবে, example.org সাইটের জন্যও কনফিগারেশন ফাইল এডিট করুন।\nnano /etc/apache2/sites-available/example.org.conf ServerAdmin webmaster@example.org ServerName example.org ServerAlias www.example.org DocumentRoot /var/www/example.org/public_html ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined ধাপ-৬ঃ কনফিগারেশন ফাইল এনেবল করা এই ধাপে আমরা কনফিগারেশন ফাইলগুলো এনেবল করব। তারজন্য প্রথমেই ডিফল্ট কনফিগারেশন ফাইল ডিজেবল করতে হবে। নিচের কমান্ড রান করুন -\nsudo a2dissite 000-default.conf এবার নতুন তৈরি করা কনফিগারেশন ফাইল এনেবল করার পালা। নিচের কমান্ড দুটি রান করুন -\nsudo a2ensite example.com.conf sudo a2ensite example.org.conf ধাপ-৭ঃ সার্ভার রিলোড করা অ্যাপাচি সার্ভারটি রিলোড করার জন্য নিচ্রের কমান্ড রান করুন -\nsudo service apache2 restart ধাপ-৮ঃ টেস্ট করা সাইটদুটির এড্রেস কোন ব্রাউজারে ব্রাউজ করে টেস্ট করুন সেগুলো ঠিকমত অ্যাক্সেস করা যায় কিনা। কোন এরর আসলে নিশ্চিত হয়ে নিন আপনার ডোমেইন প্রভাইডার ডোমেইন দুটি একটিভ করে দিয়েছে। তারপরও সমস্যা হলে উপরের ধাপ গুলো ঠিকমত অনুসরণ করেছেন কিনা যাচাই করুন।\n",
-  "wordCount" : "539",
-  "inLanguage": "en",
-  "datePublished": "2021-07-05T19:47:43+06:00",
-  "dateModified": "2021-07-05T19:47:43+06:00",
-  "author":{
-    "@type": "Person",
-    "name": "Suvash Kumar"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://suvashsumon.github.io/post/how-to-host-multiple-site-in-apache-server/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Suvash Kumar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suvashsumon.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -137,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://suvashsumon.github.io/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Suvash Kumar (Alt + H)">Suvash Kumar</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -163,17 +99,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://suvashsumon.github.io/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://suvashsumon.github.io/about-me/" title="About Me">
+                <a href="http://localhost:1313/about-me/" title="About Me">
                     <span>About Me</span>
                 </a>
             </li>
@@ -284,7 +220,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://suvashsumon.github.io/">Suvash Kumar</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Suvash Kumar</a></span> · 
 
     <span>
         Powered by
